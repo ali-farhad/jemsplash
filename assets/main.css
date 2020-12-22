@@ -56,6 +56,8 @@ select {
   font-family: inherit;
   border: 0;
   font: inherit;
+  margin: 0 .2rem;
+
 }
 
 textarea:focus,
@@ -253,7 +255,7 @@ section {
 }
 
 .home_searchbar .inputbar::placeholder {
-  padding-left: 2rem;
+  padding-left: .5rem;
 }
 
 .selectbar {
