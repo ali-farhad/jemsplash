@@ -21,6 +21,10 @@ font-family: 'Montserrat', sans-serif; */
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -633,8 +637,8 @@ blockquote {
 }
 
 
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
 
-@media (max-width: 280px ) {
   .hero {
     padding: 1rem 1rem !important;
     background-position: 0 !important;
@@ -735,297 +739,28 @@ blockquote {
 
 }
 
-}
-
-
-@media (max-width: 411px ) {
-  .hero {
-    padding: 1rem 1rem !important;
-    background-position: 0 !important;
-  }
-
-  .hero_content h1 {
-    font-size: 1.5rem !important;
-    text-align: center !important;
-  }
-
-  .hero_content p {
-
-    width: 100% !important;
-    text-align: center !important;
-}
-
-.home_mailbox input {
-  width: 80% !important;
-  margin-left: 1rem !important;
-  padding: 0 1rem !important;
-}
-
-::placeholder {
-  font-size: .8rem !important;
-
-}
-
-.stats_box {
-  min-width: 0 !important;
-}
-
-.home_stats h2 {
-  margin-top: 1rem !important;
-  font-size: 1.5rem !important;
-}
-
-.search_btn {
-  width: 14% !important;
-  right: -15 !important;
-}
-
-.home_searchbar {
-  margin: 3rem 1rem !important;
-}
-
-.split {
-  display: block !important;
-  text-align: center !important;
-  padding: 0 2rem !important;
-}
-
-.info_card img {
-  width: auto !important;
-  margin: 0.6rem 0 !important;
-}
-
-.info_card h3 {
-  width: auto !important;
-}
-
-.info_card {
-  margin: 1rem 0 !important;
-}
-
-.home_testi_header h2 {
-  font-size: 1.5rem !important;
-}
-
-.testi_quote::after {
-
-  right: 0 !important;
-  top: -63px !important;
+.footer-mini,
+.mini-a,
+.mini-b {
+  flex-direction: column !important;
   
 }
 
-blockquote {
-  font-size: 1rem !important;
+.mini-a p {
+  margin: .5rem 0 !important;
 }
 
-.nav-buttons {
-  display: block !important;
-
-}
-
-.testi_nav {
-  margin-top: 1rem !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-.footer-logo {
-  margin-left: 4rem !important;
-}
-
-.home_cta {
-
-  margin: 0 0 !important;
-
-}
-
-}
-
-
-
-@media (max-width: 414px ) {
-  .hero {
-    padding: 1rem 1rem !important;
-    background-position: 0 !important;
-  }
-
-  .hero_content h1 {
-    font-size: 1.5rem !important;
-    text-align: center !important;
-  }
-
-  .hero_content p {
-
-    width: 100% !important;
-    text-align: center !important;
+.mini-b ul {
+  justify-content: space-between !important;
 }
 
 .home_mailbox input {
-  width: 80% !important;
-  margin-left: 1rem !important;
-  padding: 0 1rem !important;
+  margin-left: 0 !important;
 }
 
-::placeholder {
-  font-size: .8rem !important;
-
-}
-
-.stats_box {
-  min-width: 0 !important;
-}
-
-.home_stats h2 {
-  margin-top: 1rem !important;
-  font-size: 1.5rem !important;
-}
-
-.search_btn {
-  width: 14% !important;
-  right: -15 !important;
-}
-
-.home_searchbar {
-  margin: 3rem 1rem !important;
-}
-
-.split {
-  display: block !important;
-  text-align: center !important;
-  padding: 0 2rem !important;
-}
-
-.info_card img {
-  width: auto !important;
-  margin: 0.6rem 0 !important;
-}
-
-.info_card h3 {
-  width: auto !important;
-}
-
-.info_card {
-  margin: 1rem 0 !important;
-}
-
-.home_testi_header h2 {
-  font-size: 1.5rem !important;
-}
-
-.testi_quote::after {
-
-  right: 0 !important;
-  top: -63px !important;
-  
-}
-
-blockquote {
-  font-size: 1rem !important;
-}
-
-.nav-buttons {
-  display: block !important;
-
-}
-
-.testi_nav {
-  margin-top: 1rem !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-.footer-logo {
-  margin-left: 4rem !important;
-}
-
-.home_cta {
-
-  margin: 0 0 !important;
-
-}
 
 }
 
 
 
-
-@media (max-width: 768px) {
-  .home-nav {
-    flex-direction: column;
-  }
-
-  .home-nav > * {
-    margin: 0.5rem 0;
-  }
-
-  .split {
-    flex-direction: column;
-  }
-
-  .hero_content h1 {
-    width: 100% !important;
-    padding: 0;
-  }
-
-  .home_stats h2 {
-    margin-top: 3rem;
-  }
-
-  .hero {
-    padding: 2rem 0 !important;
-    background-position: 80%;
-  }
-
-  .hero_content p {
-    margin-bottom: 2rem;
-    width: 50%;
-  }
-
-  .search_btn {
-    width: 9% !important;
-  }
-
-  .home_info_cards .split {
-    flex-direction: row !important;
-  }
-
-  .info_card p {
-    width: 100% !important;
-  }
-
-  .info_card img {
-    width: 25% !important;
-  }
-
-  .home_testi_header h2 {
-    padding: 0 !important;
-  }
-
-  .home_testi_header p {
-    padding: 1rem 0 !important;
-  }
-
-  blockquote {
-    width: 100% !important;
-  }
-
-  .home_cta h2 {
-    padding: 0 0.5rem !important;
-  }
-
-  .links-a {
-    margin-left: 1rem !important;
-  }
-
-  .links-a,
-  .links-b,
-  .links-c,
-  .links-d {
-    margin-bottom: 1rem;
-  }
-
-  .testi_nav {
-    width: 50%;
-  }
-}
 
