@@ -767,6 +767,10 @@ blockquote {
   text-align: center !important;
 }
 
+.home_mailbox button {
+  margin-left: -6rem !important;
+}
+
 
 }
 
