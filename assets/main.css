@@ -13,6 +13,12 @@ font-family: 'Montserrat', sans-serif; */
 
 /*---------- CSS RESET----------*/
 
+select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -691,7 +697,7 @@ blockquote {
 }
 
 .info_card img {
-  width: auto !important;
+  width: 8% !important;
   margin: 0.6rem 0 !important;
 }
 
@@ -746,12 +752,14 @@ blockquote {
   
 }
 
-.mini-a p {
+.mini-a p,
+.mini-a img ,
+.mini-a select {
   margin: .5rem 0 !important;
 }
 
 .mini-b ul {
-  justify-content: space-between !important;
+  justify-content: space-around !important;
 }
 
 .home_mailbox input {
