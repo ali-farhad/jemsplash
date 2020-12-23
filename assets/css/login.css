@@ -258,7 +258,8 @@ main {
 }
 
 .not-robot a,
-.sign-up-link {
+.sign-up-link,
+.tc-para a {
   color: var(--clr-secondary);
   cursor: pointer;
 }
@@ -278,6 +279,11 @@ main {
 
 .sign-up-para {
   margin: 1rem 0;
+}
+
+.tc-para {
+  margin: 1rem 5rem;
+  font-weight: bold;
 }
 
 /*---------- MEDIA QUERIES----------*/
@@ -384,6 +390,13 @@ main {
   .footer-logo {
     text-align: center !important;
   }
+
+  .tc-para {
+    margin: 1rem 0 !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1rem;
+  }
 }
 
 /* Extremely small devices  */
@@ -412,5 +425,12 @@ main {
   }
   .social-logins input {
     max-width: 100%;
+  }
+
+  .tc-para {
+    margin: 1rem 0 !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1rem;
   }
 }
