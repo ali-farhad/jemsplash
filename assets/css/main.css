@@ -8,7 +8,10 @@ font-family: 'Montserrat', sans-serif; */
   --clr-heading: #362f2d;
   --clr-dark-btn: #1f1f1f;
 
+
   --spacer: 2rem;
+ 
+  
 }
 
 /*---------- CSS RESET----------*/
@@ -91,6 +94,12 @@ h3 {
   background-color: var(--clr-dark-btn);
   color: var(--clr-primary);
   cursor: pointer;
+}
+
+
+
+.center-text {
+  text-align: center;
 }
 
 /*---------- Layout Styles----------*/
@@ -450,6 +459,10 @@ hr {
 
 
 
+
+
+
+
 /*---------- MEDIA QUERIES----------*/
 
 
@@ -640,6 +653,7 @@ blockquote {
 }
 
 }
+
 
 
 @media only screen and (max-width: 600px) and (min-width: 200px)  {
