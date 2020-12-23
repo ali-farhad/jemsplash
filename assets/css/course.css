@@ -181,6 +181,10 @@ section {
   .hero_content {
     padding: 0 10rem;
   }
+
+  .course_card img {
+    max-width: 20rem;
+  }
 }
 
 .courses-pill ul {
@@ -306,8 +310,9 @@ section {
 .course_card {
   margin: 0.2rem 1.5rem;
 }
+
 .course_card img {
-  max-width: 20rem;
+  /* max-width: 20rem; */
   margin: 0.2rem 0;
   border-radius: 24px;
 }
