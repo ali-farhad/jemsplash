@@ -307,6 +307,7 @@ section {
   margin: 0.2rem 1.5rem;
 }
 .course_card img {
+  max-width: 20rem;
   margin: 0.2rem 0;
   border-radius: 24px;
 }
