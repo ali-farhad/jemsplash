@@ -8,15 +8,10 @@ font-family: 'Montserrat', sans-serif; */
   --clr-heading: #362f2d;
   --clr-dark-btn: #1f1f1f;
 
-
   --spacer: 2rem;
- 
-  
 }
 
 /*---------- CSS RESET----------*/
-
-
 
 *,
 *::after,
@@ -59,8 +54,7 @@ select {
   font-family: inherit;
   border: 0;
   font: inherit;
-  margin: 0 .2rem;
-
+  margin: 0 0.2rem;
 }
 
 textarea:focus,
@@ -95,8 +89,6 @@ h3 {
   color: var(--clr-primary);
   cursor: pointer;
 }
-
-
 
 .center-text {
   text-align: center;
@@ -150,13 +142,6 @@ section {
 .user-setup a:first-child {
   margin-right: 0.5rem;
 }
-
-
-
-
-
-
-
 
 .hero {
   background-image: url(/assets/bgf.png);
@@ -264,7 +249,7 @@ section {
 }
 
 .home_searchbar .inputbar::placeholder {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .selectbar {
@@ -404,6 +389,7 @@ blockquote {
 .links-e li:first-child {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .links-a li,
@@ -444,7 +430,6 @@ blockquote {
   margin-right: 2rem;
 }
 
-
 .mini-b ul {
   display: flex;
 }
@@ -456,18 +441,7 @@ hr {
   color: inherit;
 }
 
-
-
-
-
-
-
-
 /*---------- MEDIA QUERIES----------*/
-
-
-
-
 
 @media (max-width: 770px) {
   .home-nav {
@@ -549,9 +523,8 @@ hr {
   }
 }
 
-
 /* Original */
-@media (max-width: 360px ) {
+@media (max-width: 360px) {
   .hero {
     padding: 1rem 1rem !important;
     background-position: 0 !important;
@@ -563,101 +536,90 @@ hr {
   }
 
   .hero_content p {
-
     width: 100% !important;
     text-align: center !important;
+  }
+
+  .home_mailbox input {
+    width: 80% !important;
+    margin-left: 1rem !important;
+    padding: 0 1rem !important;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem !important;
+  }
+
+  .stats_box {
+    min-width: 0 !important;
+  }
+
+  .home_stats h2 {
+    margin-top: 1rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .search_btn {
+    width: 14% !important;
+    right: -15 !important;
+  }
+
+  .home_searchbar {
+    margin: 3rem 1rem !important;
+  }
+
+  .split {
+    display: block !important;
+    text-align: center !important;
+    padding: 0 2rem !important;
+  }
+
+  .info_card img {
+    width: auto !important;
+    margin: 0.6rem 0 !important;
+  }
+
+  .info_card h3 {
+    width: auto !important;
+  }
+
+  .info_card {
+    margin: 1rem 0 !important;
+  }
+
+  .home_testi_header h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .testi_quote::after {
+    right: 0 !important;
+    top: -63px !important;
+  }
+
+  blockquote {
+    font-size: 1rem !important;
+  }
+
+  .nav-buttons {
+    display: block !important;
+  }
+
+  .testi_nav {
+    margin-top: 1rem !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .footer-logo {
+    margin-left: 4rem !important;
+  }
+
+  .home_cta {
+    margin: 0 0 !important;
+  }
 }
 
-.home_mailbox input {
-  width: 80% !important;
-  margin-left: 1rem !important;
-  padding: 0 1rem !important;
-}
-
-::placeholder {
-  font-size: .8rem !important;
-
-}
-
-.stats_box {
-  min-width: 0 !important;
-}
-
-.home_stats h2 {
-  margin-top: 1rem !important;
-  font-size: 1.5rem !important;
-}
-
-.search_btn {
-  width: 14% !important;
-  right: -15 !important;
-}
-
-.home_searchbar {
-  margin: 3rem 1rem !important;
-}
-
-.split {
-  display: block !important;
-  text-align: center !important;
-  padding: 0 2rem !important;
-}
-
-.info_card img {
-  width: auto !important;
-  margin: 0.6rem 0 !important;
-}
-
-.info_card h3 {
-  width: auto !important;
-}
-
-.info_card {
-  margin: 1rem 0 !important;
-}
-
-.home_testi_header h2 {
-  font-size: 1.5rem !important;
-}
-
-.testi_quote::after {
-
-  right: 0 !important;
-  top: -63px !important;
-  
-}
-
-blockquote {
-  font-size: 1rem !important;
-}
-
-.nav-buttons {
-  display: block !important;
-
-}
-
-.testi_nav {
-  margin-top: 1rem !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-.footer-logo {
-  margin-left: 4rem !important;
-}
-
-.home_cta {
-
-  margin: 0 0 !important;
-
-}
-
-}
-
-
-
-@media only screen and (max-width: 600px) and (min-width: 200px)  {
-
+@media only screen and (max-width: 600px) and (min-width: 200px) {
   .hero {
     padding: 1rem 1rem !important;
     background-position: 0 !important;
@@ -669,125 +631,109 @@ blockquote {
   }
 
   .hero_content p {
-
     width: 100% !important;
     text-align: center !important;
+  }
+
+  .home_mailbox input {
+    width: 80% !important;
+    margin-left: 1rem !important;
+    padding: 0 1rem !important;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem !important;
+  }
+
+  .stats_box {
+    min-width: 0 !important;
+  }
+
+  .home_stats h2 {
+    margin-top: 1rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .search_btn {
+    width: 14% !important;
+    right: -15 !important;
+  }
+
+  .home_searchbar {
+    margin: 3rem 1rem !important;
+  }
+
+  .split {
+    display: block !important;
+    text-align: center !important;
+    padding: 0 2rem !important;
+  }
+
+  .info_card img {
+    width: 8% !important;
+    margin: 0.6rem 0 !important;
+  }
+
+  .info_card h3 {
+    width: auto !important;
+  }
+
+  .info_card {
+    margin: 1rem 0 !important;
+  }
+
+  .home_testi_header h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .testi_quote::after {
+    right: 0 !important;
+    top: -63px !important;
+  }
+
+  blockquote {
+    font-size: 1rem !important;
+  }
+
+  .nav-buttons {
+    display: block !important;
+  }
+
+  .testi_nav {
+    margin-top: 1rem !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .home_cta {
+    margin: 0 0 !important;
+  }
+
+  .footer-mini,
+  .mini-a,
+  .mini-b {
+    flex-direction: column !important;
+  }
+
+  .mini-a p,
+  .mini-a img,
+  .mini-a select {
+    margin: 0.5rem 0 !important;
+  }
+
+  .mini-b ul {
+    justify-content: space-around !important;
+  }
+
+  .home_mailbox input {
+    margin-left: 0 !important;
+  }
+
+  .footer-logo {
+    text-align: center !important;
+  }
+
+  .home_mailbox button {
+    margin-left: -6rem !important;
+  }
 }
-
-.home_mailbox input {
-  width: 80% !important;
-  margin-left: 1rem !important;
-  padding: 0 1rem !important;
-}
-
-::placeholder {
-  font-size: .8rem !important;
-
-}
-
-.stats_box {
-  min-width: 0 !important;
-}
-
-.home_stats h2 {
-  margin-top: 1rem !important;
-  font-size: 1.5rem !important;
-}
-
-.search_btn {
-  width: 14% !important;
-  right: -15 !important;
-}
-
-.home_searchbar {
-  margin: 3rem 1rem !important;
-}
-
-.split {
-  display: block !important;
-  text-align: center !important;
-  padding: 0 2rem !important;
-}
-
-.info_card img {
-  width: 8% !important;
-  margin: 0.6rem 0 !important;
-}
-
-.info_card h3 {
-  width: auto !important;
-}
-
-.info_card {
-  margin: 1rem 0 !important;
-}
-
-.home_testi_header h2 {
-  font-size: 1.5rem !important;
-}
-
-.testi_quote::after {
-
-  right: 0 !important;
-  top: -63px !important;
-  
-}
-
-blockquote {
-  font-size: 1rem !important;
-}
-
-.nav-buttons {
-  display: block !important;
-
-}
-
-.testi_nav {
-  margin-top: 1rem !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-
-
-.home_cta {
-
-  margin: 0 0 !important;
-
-}
-
-.footer-mini,
-.mini-a,
-.mini-b {
-  flex-direction: column !important;
-  
-}
-
-.mini-a p,
-.mini-a img ,
-.mini-a select {
-  margin: .5rem 0 !important;
-}
-
-.mini-b ul {
-  justify-content: space-around !important;
-}
-
-.home_mailbox input {
-  margin-left: 0 !important;
-}
-
-.footer-logo {
-  text-align: center !important;
-}
-
-.home_mailbox button {
-  margin-left: -6rem !important;
-}
-
-
-}
-
-
-
-

@@ -294,6 +294,7 @@ section {
 .links-e li:first-child {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .links-a li,
