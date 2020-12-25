@@ -127,6 +127,14 @@ h3 {
   margin: 0 !important;
 }
 
+header {
+  @supports (-webkit-appearance: none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
+}
+
 /*---------- Layout Styles----------*/
 
 .split {
