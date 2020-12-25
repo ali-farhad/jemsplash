@@ -63,6 +63,10 @@ button:active {
   box-shadow: none !important;
 }
 
+button:active {
+  transform: translateY(4px) !important;
+}
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -74,6 +78,7 @@ input:focus {
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
 /*---------- General Styles----------*/
