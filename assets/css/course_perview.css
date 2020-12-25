@@ -418,6 +418,20 @@ hr {
     max-width: 75%;
     margin: 0 auto;
   }
+
+  .course-info {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .course-info h1 {
+    font-size: 1.2rem;
+  }
+
+  .course_content {
+    padding: 0 1rem;
+  }
+
   .hero {
     padding: 1rem 1rem !important;
     background-position: 0 !important;
@@ -489,6 +503,33 @@ hr {
 
 /* Extremely small devices  */
 @media only screen and (max-width: 470px) and (min-width: 220px) {
+  .course_stats ul {
+    flex-direction: column;
+  }
+
+  .course_stats ul li h3 {
+    margin-right: 0;
+  }
+
+  .intro-content ul li {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  .intro-content ul li > * {
+    margin: 1rem 0;
+  }
+
+  .btn-red {
+    align-self: normal;
+  }
+
+  .intro-content ul li p:first-of-type::before {
+    content: "";
+  }
+
   .courses-pill {
     display: none;
   }
