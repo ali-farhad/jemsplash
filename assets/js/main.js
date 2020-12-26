@@ -21,4 +21,45 @@ function close(){
 }
 
 
+
+
+var divs = document.querySelectorAll('.caro_item'), i;
+
+for (i = 0; i < divs.length; ++i) {
+//   divs[i].style.color = "green";
+
+divs[i].addEventListener('mouseenter', function(e){
+
+    
+    //   console.log(this.children[0]);
+
+      this.children[0].classList.remove('make-red');
+      this.children[0].classList.add('make-white');
+     
+})
+}
+
+for (i = 0; i < divs.length; ++i) {
+    //   divs[i].style.color = "green";
+    
+    divs[i].addEventListener('mouseleave', function(e){
+    
+        
+        //   console.log(this.children[0]);
+    
+          this.children[0].classList.add('make-red');
+          this.children[0].classList.remove('make-white');
+         
+    })
+    }
+    
+
+
+
+
+
+
+
   });
+
+
