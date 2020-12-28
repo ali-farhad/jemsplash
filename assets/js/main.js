@@ -18,7 +18,14 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 
+    setTimeout(cleanup, 1000);
 }
+
+function cleanup() {
+    mainMenu.style.display = 'none';
+
+}
+
 
 
 
