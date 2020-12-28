@@ -63,9 +63,10 @@ button:active {
   box-shadow: none !important;
 }
 
+/* 
 button:active {
   transform: translateY(4px) !important;
-}
+} */
 
 textarea:focus,
 input:focus {
@@ -216,9 +217,13 @@ section {
 
 }
 
+
+
 .carousel_box {
   display: flex;
 }
+
+
 
 
   .carousel_box > * {
@@ -229,23 +234,28 @@ section {
 .caro_item {
   display: flex;
   border: 1px solid transparent;
-  padding: .2rem 2.2rem;
+  padding: 1rem 1rem;
   border-radius: 15px;
-  height: 100% !important;
+  max-width: 22rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.splide__pagination__page {
+  background: rgb(148, 147, 147) !important;
+}
+
+.splide__pagination__page.is-active {
+  background: rgb(0, 0, 0) !important;
 
 }
 
 
 .caro_item:hover {
-
   background-color: red;
   color: white;
 
-
 }
-
-
-
 
 .caro_item img {
   margin-right: 1rem;
@@ -275,6 +285,9 @@ section {
 .caro_item ul li:nth-child(1) {
   font-weight: 600;
 }
+
+
+
 
 .links-a li:first-child,
 .links-b li:first-child,
