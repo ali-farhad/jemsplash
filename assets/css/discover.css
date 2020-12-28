@@ -120,6 +120,12 @@ h3 {
   cursor: pointer;
 }
 
+.btn-arrow {
+  border-radius: 4px;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
 .center-text {
   text-align: center;
 }
@@ -171,8 +177,6 @@ header {
 
 /*---------- Home Page Styles----------*/
 
-
-
 section {
   margin: var(--spacer) 0;
 }
@@ -206,30 +210,21 @@ section {
 @media (min-width: 860px) {
 }
 
-
-
 .discover_tagbox {
   margin: 3rem 0 2rem 0;
 }
 
 .discover_tagbox h1 {
   font-weight: 400;
-
 }
-
-
 
 .carousel_box {
   display: flex;
 }
 
-
-
-
-  .carousel_box > * {
-    margin-right: .5rem;
-  }
-
+.carousel_box > * {
+  margin-right: 0.5rem;
+}
 
 .caro_item {
   display: flex;
@@ -238,7 +233,6 @@ section {
   border-radius: 15px;
   max-width: 22rem;
   margin-bottom: 1.5rem;
-
 }
 
 .splide__pagination__page {
@@ -247,14 +241,11 @@ section {
 
 .splide__pagination__page.is-active {
   background: rgb(0, 0, 0) !important;
-
 }
-
 
 .caro_item:hover {
   background-color: red;
   color: white;
-
 }
 
 .caro_item img {
@@ -263,31 +254,79 @@ section {
 }
 
 .make-red {
-  filter: invert(11%) sepia(81%) saturate(7313%) hue-rotate(1deg) brightness(102%) contrast(112%);
-
+  filter: invert(11%) sepia(81%) saturate(7313%) hue-rotate(1deg)
+    brightness(102%) contrast(112%);
 }
 
 .make-white {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
 }
 
 .make-black {
-  filter: invert(0%) sepia(8%) saturate(7500%) hue-rotate(355deg) brightness(103%) contrast(110%);
+  filter: invert(0%) sepia(8%) saturate(7500%) hue-rotate(355deg)
+    brightness(103%) contrast(110%);
 }
 
-
-
 .caro_item ul li {
-  margin: .2rem 0;
+  margin: 0.2rem 0;
 }
 
 .caro_item ul li:nth-child(1) {
   font-weight: 600;
 }
 
+.best-selling-box {
+  display: flex;
+  justify-content: space-between;
+}
 
+.service-card-parent {
+  display: flex;
+  justify-content: space-between;
+}
 
+.service-card-parent > * {
+  flex-basis: 100%;
+}
+
+.service-card {
+  display: flex;
+  margin-top: 3rem;
+  padding: 0.5rem;
+}
+
+.service-card-info {
+  margin: 0rem 1rem;
+  min-width: 14rem;
+}
+
+.service-card-info > * {
+  margin: 1rem 0;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-card-buttons {
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 2rem;
+}
+.service-card-buttons > * {
+  width: 100%;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.service-card-img {
+  min-width: 15rem;
+  height: 20rem;
+}
+
+.service-card-img img {
+  height: 100%;
+  object-fit: cover;
+}
 
 .links-a li:first-child,
 .links-b li:first-child,
@@ -389,7 +428,6 @@ hr {
 }
 
 @media only screen and (max-width: 600px) and (min-width: 200px) {
-
   .nav-primary,
   .user-setup {
     display: none;
@@ -465,5 +503,4 @@ hr {
 
 /* Extremely small devices  */
 @media only screen and (max-width: 470px) and (min-width: 220px) {
-  
 }
