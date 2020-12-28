@@ -226,6 +226,7 @@ section {
 .user-name {
   font-weight: bold;
   margin-left: 0.8rem;
+  cursor: pointer;
 }
 
 .page_library .leading {
