@@ -481,6 +481,11 @@ section {
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.19) !important;
 }
 
+.splide__arrow:focus {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.19) !important;
+}
+
 .links-a li:first-child,
 .links-b li:first-child,
 .links-c li:first-child,
@@ -661,8 +666,55 @@ hr {
 
 /* Extremely small devices  */
 @media only screen and (max-width: 470px) and (min-width: 220px) {
-  .course-stats-parent {
+  .course-stats-parent,
+  .course-stats-card {
     flex-direction: column;
+  }
+
+  .course-stats-img {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .course-stats-review {
+    align-self: auto;
+  }
+
+  .course-stats-review > img {
+    text-align: center;
+  }
+
+  .course-stats-lead {
+    text-align: center;
+  }
+
+  .service-card-img {
+    height: auto;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .service-card-img img {
+    height: auto;
+  }
+
+  .service-card {
+    display: flex;
+    padding: 0.1rem;
+    margin: 0;
+    margin-bottom: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .service-card-info {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .service-card-info > * {
+    text-align: center;
+    margin: 1rem auto;
   }
 
   .caro_item {
