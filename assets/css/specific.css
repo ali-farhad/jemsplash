@@ -744,6 +744,11 @@ hr {
     margin: 0;
   }
 
+  .stats-bar,
+  .progressbar {
+    height: 0.6rem;
+  }
+
   .caro_item {
     flex-direction: column;
   }
