@@ -625,7 +625,17 @@ hr {
 
 /* MID Screen devices */
 
-@media only screen and (max-width: 770px) and (min-width: 470px) {
+@media only screen and (max-width: 992px) and (min-width: 470px) {
+  .course-stats-details {
+    padding-right: 2rem;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .course-stats-review {
+    flex-basis: 55%;
+  }
+
   .caro_item {
     flex-direction: column;
   }
@@ -692,19 +702,29 @@ hr {
     height: auto;
     padding: 0;
     max-width: 100%;
+    margin: 0 auto;
   }
 
   .service-card-img img {
-    height: auto;
+    height: 20rem;
   }
 
   .service-card {
     display: flex;
     padding: 0.1rem;
     margin: 0;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.5rem;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .course-descrp {
+    padding: 0 1rem;
+  }
+
+  .course-stats-review > * {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
   }
 
   .service-card-info {
@@ -715,6 +735,13 @@ hr {
   .service-card-info > * {
     text-align: center;
     margin: 1rem auto;
+  }
+
+  .course-stats-details {
+    align-self: auto;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0;
   }
 
   .caro_item {
