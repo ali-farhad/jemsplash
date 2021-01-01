@@ -130,6 +130,13 @@ h3 {
 
 /*---------- Home Page Styles----------*/
 
+.openMenu,
+.mainMenu,
+.closeMenu {
+  display: none;
+  cursor: pointer;
+}
+
 .home-nav {
   display: flex;
   justify-content: space-between;
@@ -143,6 +150,10 @@ h3 {
 
 .nav-primary ul li {
   margin-right: 0.8rem;
+}
+
+.user-setup a:first-child {
+  margin-right: 0.5rem;
 }
 
 .links-a li:first-child,
@@ -319,10 +330,6 @@ main {
 }
 
 @media (max-width: 770px) {
-  .home-nav {
-    flex-direction: column;
-  }
-
   .split {
     flex-direction: column;
   }
@@ -352,7 +359,53 @@ main {
   }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 200px) {
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+  .nav-primary,
+  .user-setup {
+    display: none;
+  }
+
+  .mainMenu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+    background: linear-gradient(to right, #ffffff, #ffffff),
+      url("/assets/logo.png");
+    background-repeat: no-repeat;
+  }
+
+  .mainMenu ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .mainMenu ul li:nth-child(1) {
+    margin-top: 1rem;
+  }
+  .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: red;
+  }
+  .openMenu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+    color: red;
+  }
+
   .login-container {
     padding: 0 !important;
     width: 80% !important;

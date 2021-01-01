@@ -473,7 +473,7 @@ hr {
   .openMenu {
     display: block;
     position: absolute;
-    left: 20px;
+    right: 20px;
     font-size: 2rem;
     color: red;
   }
@@ -543,5 +543,9 @@ hr {
 
   .intro-content ul li p:first-of-type::before {
     content: "";
+  }
+
+  .home-nav {
+    align-items: baseline;
   }
 }
