@@ -594,6 +594,16 @@ hr {
   }
 }
 
+@media only screen and (max-width: 1050px) and (min-width: 771px) {
+  .listing_tags_parent {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-card {
+    min-width: 17rem;
+  }
+}
+
 /* MID Screen devices */
 
 @media only screen and (max-width: 770px) and (min-width: 470px) {
