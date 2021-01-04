@@ -597,6 +597,35 @@ hr {
 /* MID Screen devices */
 
 @media only screen and (max-width: 770px) and (min-width: 470px) {
+  .listing_tags_parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .search-area {
+    flex-direction: column;
+  }
+
+  .search-area > div:nth-child(1) {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .search-form {
+    margin-bottom: 2rem;
+  }
+
+  .service-card-img {
+    max-width: 100%;
+  }
+
+  .service-card-img img {
+    height: 15rem;
+  }
+
+  input[type="number"] {
+    max-width: 10rem;
+  }
+
   .caro_item {
     flex-direction: column;
   }
@@ -637,17 +666,58 @@ hr {
 
 /* Extremely small devices  */
 @media only screen and (max-width: 470px) and (min-width: 220px) {
-  .caro_item {
+  .listing_parent {
     flex-direction: column;
   }
 
-  .best-selling-box {
+  .my-2 {
+    margin: 1rem 0 !important;
+  }
+
+  .listing_tags_parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-area {
+    flex-direction: column;
+  }
+
+  .price-item {
     flex-direction: column;
     align-items: center;
   }
 
-  .best-selling-nav > * {
-    margin: 0 auto;
+  input[type="number"] {
+    max-width: 10rem;
+  }
+
+  .rating-item {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .rating-item span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-area > div:nth-child(1) {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .service-card-img {
+    max-width: 100%;
+  }
+
+  .service-card-img img {
+    height: auto;
+  }
+
+  .service-card-info {
+    padding: 0;
   }
 
   .service-card-parent {
