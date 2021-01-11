@@ -299,6 +299,93 @@ section {
 .site-logoo {
   display: none;
 }
+
+.workflow-audience {
+}
+
+.workflow-audience h3 {
+  margin-top: 3rem;
+}
+.workflow-choice-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.workflow-choice-item input {
+  margin-left: 5rem;
+}
+
+.workflow-choice-item p {
+  font-weight: 600;
+}
+
+.workflow-name input[type="text"] {
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  margin: 0.1rem auto;
+  width: 100%;
+}
+
+.workflow-name input[type="text"]:focus {
+  border: 1px solid #adacac;
+}
+
+.workflow-info {
+  color: #c1baba;
+}
+
+.workflow-info .fas {
+  color: #7c7c7c;
+}
+.workflow-info-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  position: relative;
+}
+
+.workflow-info-item div {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #767676;
+  border-radius: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.workflow-info-item div.active {
+  background-color: #7c7c7c;
+}
+
+.workflow-info-item:nth-child(3)::after {
+  border-top: 1px solid #e0d6d6;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+}
+
+.workflow-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 2rem 0;
+}
+
+.workflow-nav-special {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.workflow-nav-special button {
+  margin: 0;
+}
+
 /* OLD PAGE CSS */
 
 @media (min-width: 950px) {
@@ -511,5 +598,47 @@ hr {
     left: 2px;
     max-width: 12rem;
     margin: 0 auto;
+  }
+
+  .workflow-data {
+    flex-direction: column;
+  }
+
+  .workflow-info-item:nth-child(3)::after {
+  }
+
+  .workflow-name input[type="text"] {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .workflow-name {
+    font-size: 1rem;
+  }
+
+  .workflow-info-item p:nth-child(1) {
+    padding-right: 0.5rem;
+  }
+
+  .workflow-data {
+    margin: 0;
+    align-items: center;
+  }
+
+  .workflow-info-item p:last-of-type {
+    text-align: center;
+  }
+
+  .workflow-audience {
+    align-self: stretch;
+    padding: 0 2rem;
+  }
+
+  .workflow-nav-special {
+    padding: 0 2rem;
+  }
+
+  .workflow-choice-item input {
+    margin-left: 0;
   }
 }
