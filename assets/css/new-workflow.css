@@ -369,6 +369,10 @@ hr {
     display: none;
   }
 
+  .site-logo {
+    display: none;
+  }
+
   .mainMenu {
     height: 100%;
     position: fixed;
@@ -398,14 +402,14 @@ hr {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     font-size: 2rem;
     color: red;
   }
   .openMenu {
     display: block;
     position: absolute;
-    right: 20px;
+    left: 20px;
     font-size: 2rem;
     color: red;
   }
@@ -446,4 +450,50 @@ hr {
 
 /* Extremely small devices  */
 @media only screen and (max-width: 470px) and (min-width: 220px) {
+  .workflow-nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workflow-nav ul button {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .workflow-nav-menu li {
+    margin-bottom: 0.6rem;
+  }
+
+  .workflow-nav ul li {
+    margin-right: 0;
+  }
+
+  .workflow-container {
+    padding: 0;
+    padding-bottom: 20rem;
+  }
+
+  .workflow-dropdown-infocard {
+    font-size: 0.8rem;
+  }
+
+  .workflow-dropdown-infocard h4 {
+    margin-bottom: 0.3rem;
+  }
+
+  .workflow-dropdown-infocard ul li {
+    margin-bottom: 0.2rem;
+  }
+
+  .workflow-dropdown-infocard ul li:before {
+    margin-right: 0.2rem;
+  }
+
+  .workflow-dropdown-infocard {
+    top: 7rem;
+    left: 2px;
+    max-width: 12rem;
+    margin: 0 auto;
+  }
 }
