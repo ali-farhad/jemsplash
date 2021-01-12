@@ -388,45 +388,42 @@ section {
 
 .workflow-search-widget {
   display: flex;
-  border: 1px solid rgb( 174, 174, 174 );
+  border: 1px solid rgb(174, 174, 174);
   border-radius: 0.139in;
   align-content: center;
- 
+
   color: #7c7c7c;
   margin-left: auto;
+  position: relative;
 }
 
 .workflow-search-widget p {
-  border-right: 1px solid rgb( 174, 174, 174 );
+  border-right: 1px solid rgb(174, 174, 174);
   padding: 1rem;
 }
 
 .workflow-search-widget p:last-of-type {
   border-right: 0;
-
 }
-
 
 .buyer-box {
   width: 16rem;
   margin-right: 3rem;
 }
 .buyer-imgbox img {
-    border: 1px solid rgb( 218, 218, 218 );
-    border-radius: 0.139in;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 0.139in;
 }
 
 .buyer-box p {
- font-family: 'Montserrat', sans-serif;
-/* font-family: 'Montserrat', sans-serif; */ 
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: 600;
-  margin: .8rem 0;
-
+  margin: 0.8rem 0;
 }
 
 .buyer-box .leading {
- 
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .buyer-box .buyer-name {
@@ -439,18 +436,58 @@ section {
 }
 
 .buyer-box-stats button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   align-self: center;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .buyer-data {
   display: flex;
 }
 
+.workflow-dropdown-search {
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.03);
 
+  padding: 1rem;
+  width: 22rem;
+  position: absolute;
+  right: 0rem;
+  top: 4rem;
+}
 
+.workflow-dropdown-search::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  border-top: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+  top: 13px;
+  left: 95%;
+  margin-left: -25px;
+  content: "";
+
+  transform: rotate(45deg);
+  margin-top: -25px;
+}
+
+.workflow-dropdown-search input[type="text"] {
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  margin: 0.1rem auto;
+  width: 100%;
+}
+
+.workflow-dropdown-search input[type="text"]:focus {
+  border: 1px solid #adacac;
+}
 
 /* OLD PAGE CSS */
 
@@ -670,9 +707,6 @@ hr {
     flex-direction: column;
   }
 
-  .workflow-info-item:nth-child(3)::after {
-  }
-
   .workflow-name input[type="text"] {
     padding: 0.5rem 0.5rem;
     font-size: 0.8rem;
@@ -727,8 +761,21 @@ hr {
   }
 
   .workflow-nav-special li {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
+  .workflow-dropdown-search {
+    position: relative;
+    width: 13rem;
+    right: 0;
+    top: 0;
+  }
 
+  .buyer-box {
+    width: 100%;
+  }
+
+  .workflow-dropdown-search::before {
+    left: 85%;
+  }
 }
