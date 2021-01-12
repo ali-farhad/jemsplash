@@ -975,9 +975,9 @@ hr {
     font-size: 0.9rem;
   }
 
-  .buyer-box {
+  /* .buyer-box {
     width: 100%;
-  }
+  } */
 
   .workflow-dropdown-search::before {
     left: 85%;
