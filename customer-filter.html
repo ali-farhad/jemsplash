@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jemsplash -- only workflow</title>
+  <title>Jemsplash -- Customer filter</title>
   <link rel="stylesheet" href="assets/css/new-workflow.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -82,129 +82,121 @@
      <div class="container">
        <div class="workflow-nav">
          <ul class="workflow-nav-special">
-           <li>Cancel</li>
-           <button class="btn btn-red">Add</button>
+           <li class="active">Customer</li>
+           <li>Workflows</li>
+           <div class="workflow-search-widget">
+             <p><i class="fas fa-download"></i></p>
+             <p><i class="fas fa-filter"></i></i> </p>
+             <p><i class="fas fa-search"></i> </p>
+           </div>
+
+           <div class="workflow-dropdown-filter">
+       
+       
+
+          <form action="#">
+            <div class="form-item"><label for="sort">Customer who Bought</label>
+       
+             <select class="filter-select" name="sort" id="sort">
+               <option value="#">Any Product</option>
+               <option value="#">All Products</option>
+             </select>
+           </div>
+
+           <div class="form-item"><label for="sort">Customer who have not Bought</label>
+       
+            <select class="filter-select" name="sort" id="sort">
+              <option value="#">No Product</option>
+              <option value="#">All Products</option>
+            </select>
+          </div>
+            
+             <div class="form-item">        
+               <label for="price">Price:</label>
+               <div class="price-item">
+                 <div class="price-min">        
+               <p>Paid more than</p>
+               <div class="curr-wrapper">
+               <div class="price-curr"><span>$</span></div>
+               <input class="maxx" type="number" name="minimum">
+             </div>
+             </div>
+             <div class="price-max">
+               <p>Paid less than</p>
+               <div class="curr-wrapper">
+               <div class="price-curr"><span>$</span></div>
+               <input type="number" name="maximum">
+               </div>
+             </div>
+             </div>
+       
+             </div>
+
+             <div class="form-item"><label for="sort">From</label>
+       
+              <select class="filter-select" name="sort" id="sort">
+                <option value="#">From anywhere</option>
+                <option value="#">From anywhere</option>
+              </select>
+            </div>
+
+            <div class="form-item"><label for="sort">Active Customers</label>
+              <div class="form-active-cus">
+             <input type="checkbox" name="" id="">
+             <p>Show active customers only</p>
+            </div>
+            </div>
+      
+    
+       
+       
+       
+          </form>
+       
+       
+        
+       
+       
+           </div>
+           
          </ul>
        </div>
 
-       <div class="workflow-data">
-
-
-
-        
-       <div class="workflow-audience">
-         <div class="workflow-only-box">
-          <h3>Audience</h3>
-          <form action="#">
-            <div class="workflow-choices">
-              <div class="workflow-choice-item">
-                <p>Everyone</p>
-                <input type="checkbox" name="" id="">
-              </div>
-              <div class="workflow-choice-item">
-                <p>Followers Only</p>
-                <input type="checkbox" name="" id="">
-              </div>
-              <div class="workflow-choice-item">
-                <p class="mb-2">Customers Only</p>
-                <input type="checkbox" name="" id="">
-              </div>
-            </div>
-
-       
      
-              <div class="form-item"><label for="sort">Customer who Bought</label>
-         
-               <select class="filter-select" name="sort" id="sort">
-                 <option value="#">Any Product</option>
-                 <option value="#">All Products</option>
-               </select>
-             </div>
-  
-             <div class="form-item"><label for="sort">Customer who have not Bought</label>
-         
-              <select class="filter-select" name="sort" id="sort">
-                <option value="#">No Product</option>
-                <option value="#">All Products</option>
-              </select>
-            </div>
-              
-               <div class="form-item">        
-                 <label for="price">Price:</label>
-                 <div class="price-item">
-                   <div class="price-min">        
-                 <p>Paid more than</p>
-                 <div class="curr-wrapper">
-                 <div class="price-curr"><span>$</span></div>
-                 <input class="maxx" type="number" name="minimum">
-               </div>
-               </div>
-               <div class="price-max">
-                 <p>Paid less than</p>
-                 <div class="curr-wrapper">
-                 <div class="price-curr"><span>$</span></div>
-                 <input type="number" name="maximum">
-                 </div>
-               </div>
-               </div>
-         
-               </div>
-  
-               <div class="form-item"><label for="sort">From</label>
-         
-                <select class="filter-select" name="sort" id="sort">
-                  <option value="#">From anywhere</option>
-                  <option value="#">From anywhere</option>
-                </select>
-              </div>
-  
-              <div class="form-item"><label for="sort">Active Customers</label>
-                <div class="form-active-cus">
-               <input type="checkbox" name="" id="">
-               <p>Show active customers only</p>
-              </div>
-              </div>
 
-            </div>    
-       </div>
+       <section class="buyer-data">
 
-       <div class="workflow-name">
-
-        <div class="workflow-info-item">
-        <input type="text" name="" id="" placeholder="Name of Workflow">
-      </div>
-        <div class="workflow-info">
-          <div class="workflow-info-item">
-            <p>New Customer</p>
-            <p>1 day later</p>
-            <p>1 week later</p>
+        <div class="buyer-box">
+          <div class="buyer-imgbox">
+           <img src="assets/buyer-product-1.jpg" alt="">
           </div>
-
-          <div class="workflow-info-item">
-            <p><i class="fas fa-user fa-lg"></i></p>
-            <p><i class="fas fa-envelope-open-text fa-lg"></i></p>
-            <p><i class="fas fa-envelope-open-text fa-lg"></i></p>
+          <p class="leading">Rotating Office Chair</p>
+          <p class="buyer-name">Buyer: J.Bond</p>
+          <div class="buyer-box-stats">
+            <p>Quantity: 3</p>
+            <button class="btn btn-dark btn-arrow">Price: $10</button>
           </div>
+         </div>
 
-          <div class="workflow-info-item">
-           <div class="active"></div>
-           <div></div>
-           <div></div>
+         
+        <div class="buyer-box">
+          <div class="buyer-imgbox">
+           <img src="assets/buyer-product-2.jpg" alt="">
           </div>
-
-          <div class="workflow-info-item">
-            <p>You’ll be able to add automated emails after you’ve 
-              created this workflow.</p>
-           </div>
-
-
-        </div>
-
-      </div>
+          <p class="leading">Aroma or Fragnance</p>
+          <p class="buyer-name">Buyer: Jossefeh</p>
+          <div class="buyer-box-stats">
+            <p>Quantity: 3</p>
+            <button class="btn btn-dark btn-arrow">Price: $5</button>
+          </div>
+         </div>
 
 
-    </form>
-  </div>
+
+       </section>
+
+       <section class="temp-spacing"></section>
+      
      </div>
    </section>
 

@@ -175,6 +175,14 @@ header {
   margin: 2rem 0 !important;
 }
 
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+
 /*---------- Home Page Styles----------*/
 
 section {
@@ -654,6 +662,20 @@ input[type="checkbox"] {
 
 .temp-spacing {
   margin-bottom: 20rem;
+}
+
+.workflow-only-box {
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 1rem;
+}
+
+.workflow-only-box h3 {
+  margin: 0;
 }
 
 /* OLD PAGE CSS */
