@@ -531,6 +531,131 @@ section {
   padding: 1rem 0;
 }
 
+/* filter form styles */
+
+.form-item {
+  margin: 1rem 0;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.filter-select {
+  border: 1px solid #eeeeee;
+  width: 100%;
+  padding: 1rem 1rem;
+  color: var(--clr-heading);
+}
+
+.filter-select:active,
+.filter-select:focus,
+input[type="number"]:focus {
+  border: 1px solid #9e9d9d;
+}
+
+.price-item {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.price-item > * {
+  flex-basis: 100%;
+}
+
+input[type="number"] {
+  border: 1px solid #e5e5e5;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  max-width: 8rem;
+}
+
+.price-curr {
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 1rem;
+}
+
+.price-curr span {
+  text-align: center;
+}
+
+.curr-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+}
+
+.contain-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.contain-text {
+  border: 1px solid #e5e5e5;
+  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: 1rem;
+  width: 4rem;
+}
+
+.contain-text p {
+  text-align: center;
+}
+
+.workflow-dropdown-filter {
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.03);
+
+  padding: 1rem;
+  width: 25rem;
+  position: absolute;
+  right: 0rem;
+  top: 4.5rem;
+}
+
+.workflow-dropdown-filter::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+
+  border-top: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+  top: 13px;
+  left: 83%;
+  margin-left: -25px;
+  content: "";
+
+  transform: rotate(45deg);
+  margin-top: -21px;
+}
+
+.form-active-cus {
+  display: flex;
+  align-items: center;
+}
+
+.form-active-cus input {
+  margin-right: 1rem;
+}
+
+.temp-spacing {
+  margin-bottom: 20rem;
+}
+
 /* OLD PAGE CSS */
 
 @media (min-width: 950px) {
@@ -823,6 +948,31 @@ hr {
   .workflow-dropdown-download::before {
     top: 13px;
     left: 36%;
+  }
+
+  .workflow-dropdown-filter {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .workflow-dropdown-filter::before {
+    top: 13px;
+    left: 56%;
+  }
+
+  input[type="number"] {
+    max-width: 4rem;
+  }
+
+  .price-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form label {
+    font-size: 0.9rem;
   }
 
   .buyer-box {
