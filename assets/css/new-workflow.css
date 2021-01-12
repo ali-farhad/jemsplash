@@ -386,6 +386,72 @@ section {
   margin: 0;
 }
 
+.workflow-search-widget {
+  display: flex;
+  border: 1px solid rgb( 174, 174, 174 );
+  border-radius: 0.139in;
+  align-content: center;
+ 
+  color: #7c7c7c;
+  margin-left: auto;
+}
+
+.workflow-search-widget p {
+  border-right: 1px solid rgb( 174, 174, 174 );
+  padding: 1rem;
+}
+
+.workflow-search-widget p:last-of-type {
+  border-right: 0;
+
+}
+
+
+.buyer-box {
+  width: 16rem;
+  margin-right: 3rem;
+}
+.buyer-imgbox img {
+    border: 1px solid rgb( 218, 218, 218 );
+    border-radius: 0.139in;
+}
+
+.buyer-box p {
+ font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat', sans-serif; */ 
+  font-weight: 600;
+  margin: .8rem 0;
+
+}
+
+.buyer-box .leading {
+ 
+  margin-top: .5rem;
+}
+
+.buyer-box .buyer-name {
+  color: var(--clr-secondary);
+}
+
+.buyer-box-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyer-box-stats button {
+  font-family: 'Montserrat', sans-serif;
+
+  align-self: center;
+  padding: .3rem;
+}
+
+.buyer-data {
+  display: flex;
+}
+
+
+
+
 /* OLD PAGE CSS */
 
 @media (min-width: 950px) {
@@ -641,4 +707,28 @@ hr {
   .workflow-choice-item input {
     margin-left: 0;
   }
+
+  .workflow-nav-special {
+    flex-direction: column;
+  }
+
+  .buyer-data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buyer-box {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .workflow-search-widget {
+    margin: 1rem auto;
+  }
+
+  .workflow-nav-special li {
+    margin: .5rem 0;
+  }
+
+
 }
