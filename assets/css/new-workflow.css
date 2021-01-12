@@ -963,7 +963,7 @@ hr {
   }
 
   input[type="number"] {
-    max-width: 4rem;
+    max-width: auto;
   }
 
   .price-item {
