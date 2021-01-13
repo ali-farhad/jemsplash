@@ -197,6 +197,10 @@ section {
   margin: var(--spacer) 0;
 }
 
+.site-logoo {
+  display: none;
+}
+
 .openMenu,
 .mainMenu,
 .closeMenu {
@@ -237,6 +241,24 @@ section {
 
 .user-setup a:first-child {
   margin-right: 0.5rem;
+}
+
+.workflow-nav-special {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.workflow-nav-options {
+  display: flex;
+}
+
+.workflow-nav-options li {
+  margin-right: 2rem;
+}
+
+.workflow-nav-special button {
 }
 
 .help-cta-box {
@@ -309,6 +331,39 @@ section {
 
 .help-articles-row > * + * {
   margin-left: 2rem;
+}
+
+/* ANAYTLICS INVITE PAGE */
+
+.invites-cta-box {
+  text-align: center;
+}
+
+.invites-cta-box h1 {
+  margin: 1rem 0;
+}
+
+.invites-cta-box p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.invites-cta-search-box input {
+  border-width: 1px;
+  border-color: rgb(237, 237, 237);
+  border-style: solid;
+  border-radius: 25px;
+  padding: 1rem 1rem;
+  width: 70%;
+  margin: 0.5rem 0;
+}
+
+.invites-cta-search-box input:focus {
+  border-color: var(--clr-dark-btn);
+  transition: all 1s;
+}
+
+.invites-cta-search-box button {
+  margin-left: -7.5rem;
 }
 
 /* OLD PAGE CSS */
@@ -386,7 +441,11 @@ hr {
   }
 
   .site-logo {
-    display: block;
+    display: none;
+  }
+
+  .site-logoo {
+    display: none;
   }
 
   .mainMenu {
@@ -430,6 +489,10 @@ hr {
     color: red;
   }
 
+  .openMenu.invites {
+    left: 20px;
+  }
+
   .split {
     display: block !important;
     text-align: center !important;
@@ -462,6 +525,14 @@ hr {
 /* MID Screen devices */
 
 @media only screen and (max-width: 770px) and (min-width: 470px) {
+  .site-logo {
+    display: none;
+  }
+
+  .site-logoo {
+    display: block;
+    padding-top: 1rem;
+  }
 }
 
 /* Extremely small devices  */
@@ -490,6 +561,28 @@ hr {
   }
 
   .help-cta-search-box button {
+    margin-left: 0;
+  }
+
+  .workflow-nav-special,
+  .workflow-nav-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workflow-nav-options li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .invites-cta-search-box input {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .invites-cta-search-box button {
     margin-left: 0;
   }
 }
