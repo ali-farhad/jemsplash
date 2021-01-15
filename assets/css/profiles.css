@@ -352,6 +352,57 @@ i[class^="fab"] {
   right: 26px;
 }
 
+/* PROFILE - Profile-User-Product */
+
+.service-card {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  margin-bottom: 3rem;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-info {
+  margin: 0rem 1rem;
+}
+
+.service-card-info > * {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.service-card-buttons {
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 2rem;
+}
+.service-card-buttons > * {
+  width: 100%;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 3rem;
+}
+
+.service-card-img {
+  max-width: 20rem;
+}
+
+.service-card-img img {
+}
+
+.user-profile-product-box {
+  display: flex;
+}
+
+.user-profile-product-box > * {
+  flex-basis: 100%;
+}
+
 .links-a li:first-child,
 .links-b li:first-child,
 .links-c li:first-child,
@@ -536,6 +587,21 @@ hr {
   .user-profile-box a {
     padding-right: 1rem;
   }
+
+  .user-profile-product-box,
+  .service-card {
+    flex-direction: column;
+  }
+
+  .service-card > * {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .service-card-img {
+    width: 100%;
+  }
 }
 
 /* smartphones, Android phones, landscape iPhone */
@@ -564,10 +630,46 @@ hr {
     margin-left: 1.5rem;
     text-align: center;
   }
+
+  .service-card {
+    flex-direction: row;
+  }
+
+  .service-card-info {
+    margin-left: 1rem;
+  }
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
+  .user-profile-info-box {
+    margin-left: 3.5rem;
+  }
+
+  .user-profile-product-box {
+    flex-direction: row;
+  }
+
+  .service-card > * {
+    text-align: left;
+  }
+
+  .user-profile-product-box > {
+    flex-basis: 100%;
+  }
+
+  .service-card {
+    min-width: 20rem;
+  }
+
+  .service-card-img img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .service-card-img {
+    min-width: 10rem;
+
 }
 
 /* big landscape tablets, laptops, and desktops */
