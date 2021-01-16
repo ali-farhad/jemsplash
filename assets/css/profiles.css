@@ -1204,7 +1204,7 @@ hr {
     padding: 1rem;
     width: 17rem;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     top: 48px;
     left: 0;
   }
