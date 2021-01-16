@@ -220,11 +220,18 @@ section {
   margin: 0 1rem;
 }
 
-.user-avatar {
-  border-radius: 100%;
-  width: 2.5rem;
-  padding: 0.6rem;
-  background-color: #e2e2e2;
+.user-name {
+  font-weight: 600;
+}
+
+.user-avatar img {
+  background-color: rgb(226, 226, 226);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 0.5rem;
 }
 
 .active {
@@ -507,6 +514,226 @@ i[class^="fab"] {
   display: block;
   margin: 2rem auto;
   font-weight: 600;
+}
+
+/* PROFILE STYLE CHANGE */
+
+/* SLIDER SWITCH BUTTON */
+
+.switch::before {
+  content: "Edit";
+  position: absolute;
+  left: -35px;
+  color: #cccbcb;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  margin-right: 5rem;
+}
+
+.switch::after {
+  content: "Preview";
+  position: absolute;
+  right: -67px;
+  color: #cccbcb;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(229, 229, 229);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.36);
+}
+
+input:checked + .slider {
+  background-color: var(--clr-secondary);
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* SLIDER SWITCH BUTTON ENDS */
+
+.workflow-nav {
+  position: relative;
+}
+.workflow-nav-menu {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.workflow-nav ul li {
+  margin-right: 3rem;
+}
+
+.workflow-nav-btns {
+  margin-left: auto;
+}
+
+/* HOVER MENU STYLES */
+
+form-item {
+  margin: 1rem 0;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.filter-select {
+  border: 1px solid #eeeeee;
+  width: 100%;
+  padding: 1rem 1rem;
+  color: var(--clr-heading);
+}
+
+.filter-select:active,
+.filter-select:focus,
+input[type="number"]:focus {
+  border: 1px solid #9e9d9d;
+}
+
+.price-item {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.price-item > * {
+  flex-basis: 100%;
+}
+
+input[type="number"] {
+  border: 1px solid #e5e5e5;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  max-width: 8rem;
+}
+
+.price-curr {
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 1rem;
+}
+
+.price-curr span {
+  text-align: center;
+}
+
+.curr-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+}
+
+.contain-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.contain-text {
+  border: 1px solid #e5e5e5;
+  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: 1rem;
+  width: 4rem;
+}
+
+.contain-text p {
+  text-align: center;
+}
+
+.workflow-dropdown-filter {
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.03);
+
+  padding: 1rem;
+  width: 25rem;
+  position: absolute;
+  right: 0rem;
+  top: 4.5rem;
+}
+
+.workflow-dropdown-filter::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+
+  border-top: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+  top: 13px;
+  left: 83%;
+  margin-left: -25px;
+  content: "";
+
+  transform: rotate(45deg);
+  margin-top: -21px;
+}
+
+.form-active-cus {
+  display: flex;
+  align-items: center;
+}
+
+.form-active-cus input {
+  margin-right: 1rem;
 }
 
 .links-a li:first-child,
