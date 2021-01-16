@@ -165,10 +165,6 @@ header {
   .split {
     flex-direction: row;
   }
-
-  .container {
-    padding: 0 3rem;
-  }
 }
 
 .my-2 {
@@ -582,6 +578,14 @@ hr {
     display: none;
   }
 
+  .site-logo {
+    display: none;
+  }
+
+  .site-logoo {
+    display: none;
+  }
+
   .mainMenu {
     height: 100%;
     position: fixed;
@@ -618,7 +622,7 @@ hr {
   .openMenu {
     display: block;
     position: absolute;
-    right: 20px;
+    left: 20px;
     font-size: 2rem;
     color: red;
   }
@@ -957,7 +961,7 @@ hr {
   }
 
   .service-card-img img {
-    height: 250px;
+    height: 166px;
     object-fit: cover;
   }
 
