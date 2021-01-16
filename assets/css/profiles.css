@@ -161,16 +161,6 @@ header {
   margin-left: 1rem;
 }
 
-@media (min-width: 40em) {
-  .split {
-    flex-direction: row;
-  }
-
-  .container {
-    padding: 0 3rem;
-  }
-}
-
 .my-2 {
   margin: 2rem 0 !important;
 }
