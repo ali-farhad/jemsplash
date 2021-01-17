@@ -811,6 +811,27 @@ form label {
   object-fit: cover;
 }
 
+.btn-fb-box,
+.btn-twitter-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-fb-box {
+  position: relative;
+}
+
+.btn-fb-box .fas {
+  color: red;
+  position: absolute;
+  top: 0;
+}
+
+.btn-fb-box p {
+  margin-right: 0.5rem;
+}
+
 .btn-fb {
   border-width: 1px;
   border-color: rgb(226, 226, 226);
@@ -820,12 +841,14 @@ form label {
   color: white;
 }
 
-.btn-upload {
+.btn-twitter {
   border-width: 1px;
   border-color: rgb(226, 226, 226);
   border-style: solid;
   border-radius: 8px;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(71, 165, 236);
+  color: white;
+  width: 7rem;
 }
 
 .profile-picture-box {
@@ -1155,11 +1178,6 @@ hr {
     margin: 0 1rem !important;
   }
 
-  .workflow-nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .workflow-nav-btns {
     margin-left: 0;
   }
@@ -1189,7 +1207,7 @@ hr {
     position: absolute;
     right: 36px;
     width: 21rem;
-    top: 50px;
+    top: 105px;
   }
 
   .profile-style-changes {
@@ -1267,7 +1285,7 @@ hr {
   }
 
   .user-profile-products-section {
-    margin-top: 12rem;
+    margin-top: 2rem;
   }
   .profile-product-parent {
     display: flex;
@@ -1314,11 +1332,11 @@ hr {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.03);
     padding: 1rem;
-    width: 17rem;
+    width: 19rem;
     position: absolute;
     z-index: 1;
     top: 53px;
-    left: 74px;
+    left: 220px;
   }
 
   .workflow-dropdown-profile-picture::before {

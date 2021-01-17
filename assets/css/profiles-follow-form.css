@@ -715,7 +715,7 @@ form label {
 .color-picker div:nth-child(1) {
   border: 1px solid #e5e5e5;
   margin: 1rem 0;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 10px;
 
   width: 100%;
@@ -727,13 +727,20 @@ form label {
 
 .form-item .color-picker div:nth-child(2) {
   border: 1px solid transparent;
-  width: 25px;
-  height: 25px;
-
-  background-color: var(--clr-secondary);
+  width: 55px;
+  height: 49px;
+  background-image: url(../icon-follow-form.png);
+  background-repeat: no-repeat;
   position: absolute;
-  right: 36px;
-  bottom: 337px;
+  right: 16px;
+  bottom: 187px;
+}
+
+.embed-text {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: b4b3b3;
+  color: #b4b3b3;
 }
 
 .form-item .form-background {
@@ -1202,7 +1209,7 @@ hr {
     height: 25px;
     border-top: 1px solid rgb(255 232 232);
     border-left: 1px solid rgb(231, 231, 231);
-    top: 29px;
+    top: 184px;
     left: 3%;
     margin-left: -25px;
     content: "";
@@ -1288,8 +1295,8 @@ hr {
     width: 17rem;
     position: absolute;
     z-index: 1;
-    top: 48px;
-    left: 0;
+    top: 52px;
+    left: 362px;
   }
 
   .workflow-dropdown-style::before {
