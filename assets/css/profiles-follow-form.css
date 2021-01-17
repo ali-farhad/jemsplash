@@ -1115,6 +1115,9 @@ hr {
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width: 600px) {
+  .form-item .color-picker div:nth-child(2) {
+    bottom: 172px;
+  }
   .user-profile-box {
     width: 100%;
     flex-direction: row;
@@ -1244,6 +1247,9 @@ hr {
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
+  .form-item .color-picker div:nth-child(2) {
+    bottom: 187px;
+  }
   .user-profile-info-box {
     margin-left: 3.5rem;
   }
