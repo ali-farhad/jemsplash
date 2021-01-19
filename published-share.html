@@ -83,13 +83,10 @@
             <li>Products</li>
             <li>Checkout</li>
             <li class="active">Share</li>
-            <li>Follow form</li>
-
-
             
             <div class="workflow-nav-btns">
              <div class="workflow-nav-share">
-              <p>http:/jems.com.gh3</p>
+              <p>http://jems.com.gh3</p>
              </div>
              <button class="btn ">Publish</button>
               <button class="btn btn-red">Save Changes</button>
@@ -109,61 +106,160 @@
     
 <section>
   <div class="container">
-    <div class="flex-box-parent">
+    <div class="flex-box-parent-box">
       <div class="flex-column-one">
-        <h1>Share your Product</h1>
-        <p>Social links</p>
+        <p class="h1">Share your product</p>
+        
+        <p class="product-tagline">Social links</p>
         <div class="social-links-box">
 
           <div class="social-links-fb">
-            <button>Facebook</button>
+            <i class="fab fa-facebook-f fa-lg"></i>
+            <button>Share</button>
           </div>
 
           <div class="social-links-tweet">
+            <i class="fab fa-twitter fa-lg"></i>
             <button>Tweet</button>
           </div>
 
           <div class="social-links-url">
+            <i class="fas fa-file-medical fa-lg"></i>
             <button>Copy to URL</button>
           </div>
 
         </div>
 
         <div class="embed-section">
-          <p>Embed on a website</p>
+          <p class="product-tagline">Embed on a website</p>
           <div class="embed-section-box">
             
             <div class="flex-box-parent">
 
-              <div class="flex-column-one">
+              <div class="flex-column-one center-text embed-overlay">
 
                 <div class="embed-section-icon">
-
+                  <img src="assets/icon-overlay.png" alt="">
                 </div>
-                <p>Overlay</p>
-                <p>Inline purchases without leaving your site</p>
+                <p class="h1">Overlay</p>
+                <p class="embed-section-leading">Inline purchases without leaving your site</p>
                 
               </div>
-              <div class="flex-column-two">
+              <div class="flex-column-two center-text embed-embed">
 
                 <div class="embed-section-icon">
+                  <img src="assets/icon_embed.png" alt="">
 
                 </div>
-                <p>Overlay</p>
-                <p>Inline purchases without leaving your site</p>
+                <p class="h1">Embed</p>
+                <p class="embed-section-leading">Inline purchases without leaving your site</p>
               </div>
-              </div>   
+              </div>  
+              
+              <p>Button text:</p>
+
+              <select class="filter-select embed-select" name="sort" id="sort">
+                <option value="#">Buy my Product</option>
+                <option value="#">Contact</option>
+              </select>
+
+              <div class="checkbox-box">
+                <input type="checkbox" name="" id="">
+                <p>Auto-trigger the payment form</p>
+              </div>
+              <div class="checkbox-box">
+                <input type="checkbox" name="" id="">
+                <p>Allow single-product purchases only</p>
+              </div>
+
+              <button class="btn btn-red btn-center">Buy my Product</button>
+              <p class="center-text embed-code-box-heading">Copy and paste this code into your website</p>
+              <p class="center-text embed-code-box-lead">We highly recommend you have an SSL certificate
+                to increase buyer confidence.</p>
+
+                <div class="code-box">
+
+                </div>
+                <div class="embed-btn-box">
+                <button class="btn btn-arrow btn-center"><i class="fas fa-file-medical fa-2x"></i></button>
+              </div>
             </div>
 
           </div>
+
+          <div class="flex-row">
+            <p class="h1">Profile</p>
+            <p class="flex-row-link"><a href="#">  Learn more</a></p>
+          </div>
+
+          <div class="flex-row">
+            <p class="product-tagline">Shown on your creator profile</p>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="flex-row">
+            <p class="h1">Discover</p>
+            <p class="flex-row-link">Learn more</p>
+          </div>
+
+          <p class="product-tagline">Tags</p>
+          <div class="tag-input">
+            <input type="text" name="" id="" placeholder="Begin typing to add a tag">
+
+          </div>
+
+          <p class="product-tagline">Setting</p>
+
+          <div class="flex-row flex-row-small">
+            <p>Display your product's 1-5 star rating to prospective customers</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="flex-row flex-row-small">
+            <p>This product contains content meant only for adults, including the preview</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
         </div>
         <!-- END column-one -->
-      </div>
+     
       <div class="flex-column-two">
+
+        <div class="cover-image-box">
+          <img src="assets/published-product-1.jpg" alt="">
+            
+          <div class="flex-box-parent">
+              <div class="flex-column-one center-text cover-image-info">
+                <p class="h1">Cover Image</p>
+                <p class="cover-image-box-by">By:  <span> Taylor.K</span></p>
+                <img src="assets/stars2.png" alt="">
+                <input type="text" name="" id="" placeholder="This product is short..">
+              </div>
+            <div class="flex-column-two cover-image-info">
+
+              <div class="flex-box-parent cover-image-btns">
+                <button class="btn btn-dark btn-arrow cover-image-btn-price">$10</button>
+                <button class="btn btn-red btn-arrow">I want this!</button>
+               
+
+              </div>
+              <input class="cover-image-input-long" type="text" name="" id="" placeholder="But this product..">
+            </div> 
+          </div>
+        </div>
 
       </div>
 
     </div>
+  </div>
   </div>
 </section>
 
