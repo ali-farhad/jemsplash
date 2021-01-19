@@ -251,6 +251,10 @@ section {
   margin-right: 0.8rem;
 }
 
+.nav-primary ul li i {
+  margin-right: 0.4rem;
+}
+
 .user-setup a:first-child {
   margin-right: 0.5rem;
 }
@@ -752,6 +756,11 @@ input:checked + .slider:before {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .workflow-nav-share p {
+    max-width: 15rem;
+    margin: 0 auto;
   }
 }
 
