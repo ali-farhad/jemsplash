@@ -456,6 +456,73 @@ section {
   }
 }
 
+
+/* OLD PAGE CSS */
+
+@media (min-width: 950px) {
+}
+
+.links-a li:first-child,
+.links-b li:first-child,
+.links-c li:first-child,
+.links-d li:first-child,
+.links-e li:first-child {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.links-a li,
+.links-b li,
+.links-c li,
+.links-d li,
+.links-e li {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.fas {
+  margin-right: 0.5rem;
+}
+
+.footer-links {
+  margin: 2rem 0;
+}
+
+.footer-mini {
+  margin: 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #8080805c;
+  padding: 0.3rem 0;
+}
+
+.mini-a {
+  display: flex;
+  align-items: center;
+}
+
+.mini-a p {
+  margin-right: 2rem;
+}
+
+.mini-b ul {
+  display: flex;
+}
+.mini-b ul li {
+  margin-right: 1rem;
+}
+
+hr {
+  color: inherit;
+}
+
+
+
 /* big landscape tablets, laptops, and desktops */
 @media (min-width: 1025px) {
 }
@@ -564,3 +631,5 @@ section {
     padding-top: 1rem;
   }
 }
+
+
