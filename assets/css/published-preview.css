@@ -456,7 +456,6 @@ section {
   }
 }
 
-
 /* OLD PAGE CSS */
 
 @media (min-width: 950px) {
@@ -520,8 +519,6 @@ section {
 hr {
   color: inherit;
 }
-
-
 
 /* big landscape tablets, laptops, and desktops */
 @media (min-width: 1025px) {
@@ -631,5 +628,3 @@ hr {
     padding-top: 1rem;
   }
 }
-
-
