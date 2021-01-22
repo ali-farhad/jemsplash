@@ -184,8 +184,16 @@ header {
   margin-bottom: 4rem !important;
 }
 
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
 .mt-2 {
   margin-bottom: 2rem !important;
+}
+
+.mtop-2 {
+  margin-top: 2rem !important;
 }
 
 .mt-4 {
@@ -195,6 +203,11 @@ header {
 .px-2 {
   padding-right: 2rem !important;
   padding-left: 2rem !important;
+}
+
+.px-1 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .no-margin {
@@ -480,6 +493,7 @@ input:checked + .slider:before {
   width: 100%;
 
   padding: 1rem;
+  color: #797979;
 }
 
 .checkbox-box {
@@ -715,6 +729,60 @@ input:checked + .slider:before {
   font-size: 5rem;
   opacity: 0.3;
 }
+
+/* PUBLISHED - CHECKOUT PAGE */
+
+.name-checkout {
+  position: relative;
+}
+
+.all-products-check {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  top: 0;
+  right: 33px;
+  color: #797979;
+}
+
+.all-products-check p {
+  margin-right: 10px;
+}
+
+.product-checkout-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+}
+
+.product-checkout-box > * {
+  flex-basis: 100%;
+}
+
+.product-checkout-box > * {
+  margin-right: 12px;
+}
+
+.btn-discount {
+  border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+}
+
+.product-checkout-box input {
+  padding: 0 1rem;
+}
+
+.tag-input textarea::placeholder {
+  color: #797979;
+  font-size: .9rem;
+}
+
+
+
 
 /*---------- MEDIA QUERIES----------*/
 
