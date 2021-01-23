@@ -753,7 +753,7 @@ input:checked + .slider:before {
 .product-checkout-box {
   display: flex;
   justify-content: space-between;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .product-checkout-box > * {
@@ -766,10 +766,10 @@ input:checked + .slider:before {
 
 .btn-discount {
   border-width: 1px;
-    border-color: rgb(215, 215, 215);
-    border-style: solid;
-    border-radius: 5px;
-    background-color: rgb(242, 242, 242);
+  border-color: rgb(215, 215, 215);
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgb(242, 242, 242);
 }
 
 .product-checkout-box input {
@@ -778,11 +778,8 @@ input:checked + .slider:before {
 
 .tag-input textarea::placeholder {
   color: #797979;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
-
-
 
 /*---------- MEDIA QUERIES----------*/
 
@@ -988,6 +985,60 @@ input:checked + .slider:before {
     font-size: 0.8rem;
     font-weight: 500;
   }
+}
+
+.cover-card-box {
+  border-width: 0.5px;
+  border-color: rgb(215, 215, 215);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.588);
+  box-shadow: 0px 13px 14px 0px rgba(0, 0, 0, 0.06);
+
+  padding: 1rem 2rem;
+}
+
+.cover-card-head {
+  text-align: center;
+}
+.cover-card-head p:nth-child(1) {
+  text-align: center;
+  color: #797979;
+}
+
+.cover-card-head p:nth-child(2) {
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cover-card-head p:nth-child(3) {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #797979;
+  margin-top: 0.2rem;
+}
+
+.cover-card-head input {
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+  border-style: solid;
+  border-radius: 8px;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cover-card-content {
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+
+  margin-top: 1rem;
 }
 
 /* PUBLISHED CHECKOUT PAGE */
