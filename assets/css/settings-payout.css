@@ -172,6 +172,10 @@ header {
   }
 }
 
+.my-1 {
+  margin: 1rem 0 !important;
+}
+
 .my-2 {
   margin: 2rem 0 !important;
 }
@@ -189,7 +193,7 @@ header {
 }
 
 .mt-2 {
-  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
 }
 
 .mtop-2 {
@@ -404,7 +408,7 @@ hr {
   height: 12px;
   border-top: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
-  top: 55px;
+  top: 106px;
   left: 95%;
   margin-left: 3px;
   content: "";
@@ -449,7 +453,8 @@ hr {
   display: inline;
   margin-top: 0.6rem;
 }
-.form-item label {
+.form-item label,
+.form-item h3 {
   display: block;
   margin: 0.6rem 0.4rem;
   font-weight: 600;
@@ -471,13 +476,13 @@ hr {
   padding: 1rem 1rem;
 }
 
-.setting-form p {
+.payout-form p {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
-.setting-form-divider {
+.payout-form-divider {
   padding-bottom: 2rem;
   border-bottom: 1px solid rgb(226, 226, 226);
 }
@@ -562,11 +567,69 @@ input:checked + .slider:before {
 
 /* SLIDER SWITCH BUTTON ENDS */
 
-.setting-form button {
-  margin: 2rem 0;
+/* SETTINGS - PASSWORD END */
+
+/* SETTINGS - PAYOUT */
+
+.payout-lead {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.payout-lead > * {
+  text-align: center !important;
+  margin: 0.6rem 0;
+}
+
+.payout-lead p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.form-checkbox h3 {
+  display: inline;
+  margin: 0.6rem 0.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.account-type {
+  max-width: 25rem;
+}
+
+.form-bday-box {
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(252, 252, 252);
+
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-bday-box p {
+  margin: 0.4rem;
+  padding-bottom: 0.3rem;
+}
+
+.paypal p {
+  color: #c0bfbf;
+}
+
+.paypal p:last-of-type {
+  font-size: 1rem;
+  color: black;
+
+  margin: 2rem 0 0.2rem 0;
+  max-width: 37rem;
+}
+
+.payout-form button {
+  margin: 0rem 0 2rem 0;
   font-weight: 600;
 }
-/* SETTINGS - PASSWORD END */
 
 /*---------- MEDIA QUERIES OLD----------*/
 
@@ -690,16 +753,20 @@ input:checked + .slider:before {
     flex-direction: column;
   }
 
-  .setting-form p {
+  .payout-form p {
     text-align: justify;
   }
 
-  .setting-form input::placeholder {
+  .payout-form input::placeholder {
     font-size: 0.7rem;
     font-weight: bold;
   }
-  .setting-form select {
+  .payout-form select {
     font-size: 0.7rem;
+  }
+
+  .form-bday-box select {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -709,11 +776,11 @@ input:checked + .slider:before {
     display: flex !important;
   }
 
-  .setting-form input::placeholder {
+  .payout-form input::placeholder {
     font-size: 1rem;
     font-weight: normal;
   }
-  .setting-form select {
+  .payout-form select {
     font-size: 1rem;
   }
 }

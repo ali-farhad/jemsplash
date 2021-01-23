@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jemsplash -- Settings</title>
-  <link rel="stylesheet" href="assets/css/settings.css" />
+  <title>Jemsplash -- Settings - Payout</title>
+  <link rel="stylesheet" href="assets/css/settings-payout.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,700&display=swap"
@@ -77,8 +77,8 @@
 
       <div class="workflow-nav">
         <ul class="workflow-nav-menu">
-          <li class="active">Settings</li>
-          <li>Payout</li>
+          <li>Settings</li>
+          <li class="active">Payout</li>
           <li>Password</li>
           <li>Advanced</li>
           <li>KPI</li>
@@ -100,8 +100,8 @@
       <div class="setting-nav-box">
       
         <ul>
-          <li class="active-setting">Settings</li>
-          <li>Payout</li>
+          <li>Settings</li>
+          <li class="active-setting">Payout</li>
           <li>Password</li>
           <li>Advanced</li>
           <li>KPI</li>
@@ -114,148 +114,155 @@
 
       <div class="setting-main-box">
         <div class="setting-main-content">
-          <form action="#" class="setting-form">
+          <form action="#" class="payout-form">
 
 
-            <div class="setting-form-divider">
+            
+
+              
+                <div class="payout-lead">
+                <p>Get Paid</p>
+                <p>Just like a real paycheck, your account balance is deposited to your bank account. 
+                  Turn things on by filling out the fields below. </p>
+                </div>
+             
+            <div class="form-item">
+              <h3>Account Type</h3>
+              <p class="settings-link"><a href="#">What type of account should I choose?</a></p>
+
+            </div>
+
+            <div class="payout-form-divider">
 
             <div class="form-flex">
-
-            <div class="form-item">
-              <label for="username">Username</label>
-              <input type="text" name="username" id="#" placeholder="username here">
-            </div>
-
-            <div class="form-item">
-              <label for="email">Email</label>
-              <input type="text" name="new" id="#" placeholder="email here">
-            </div>
-
-          </div>
-
-          <div class="form-flex">
-
-            <div class="form-item no-margin">
-              <p>View and edit your profile at: <span class="settings-link"><a href="#"> gumroad.com/username</a></span></p>
-            </div>
-
-            <div class="form-item no-margin">
-
+              <div class="account-type form-flex">
               <div class="form-checkbox">
-             <input type="checkbox" name="" id="">
-             <p>Receive email notifications for each purchase</p>
+                <input type="checkbox" name="" id="">
+                <h3>Individual</h3>
+               </div>
+
+               <div class="form-checkbox">
+                <input type="checkbox" name="" id="">
+                <h3>Business</h3>
+               </div>
+              </div>
+
+
             </div>
 
-            <div class="form-checkbox">
-              <input type="checkbox" name="" id="">
-              <p>Receive personalized product announcements</p>
-             </div>
+          </div>   <!-- FORM SECTION ENDS / BORDER -->
 
-             <div class="form-checkbox">
-              <input type="checkbox" name="" id="">
-              <p>Remove Jemsplash branding from your emails</p>
-             </div>
 
+          <div class="payout-form-divider no-padding">
+
+            <div class="form-item no-margin">
+              <h3 class="mt-1">Your personal information</h3>
+              <p class="settings-link"><a href="#">Why does Jemsplash need this information?</a></p>
+
+            </div>
+
+            <div class="form-flex no-padding">
+
+            <div class="form-item">
+              <input type="text" name="name" id="#" placeholder="First name">
+            </div>
+
+            <div class="form-item">
+              <input type="text" name="lname" id="#" placeholder="Last name">
             </div>
 
           </div>
+
+          <div class="form-flex no-padding">
+
+            <div class="form-item">
+              <input type="text" name="staddress" id="#" placeholder="Street Address">
+            </div>
+
+            <div class="form-item">
+              <input type="text" name="city" id="#" placeholder="City">
+            </div>
+
+          </div>
+
+          <div class="form-flex no-padding">
+
+            <div class="form-item">
+              <input type="text" name="country" id="#" placeholder="Country">
+            </div>
+
+            <div class="form-item">
+              <input type="text" name="pcode" id="#" placeholder="Postal Code">
+            </div>
+
+          </div>
+
+          <div class="form-item form-item-half mb-2">
+            <input type="text" name="pnumber" id="#" placeholder="Phone number">
+      
+          </div>
+
+        </div>  <!-- FORM SECTION ENDS / BORDER -->
+
+
+        <div class="payout-form-divider my-2">
+
+        <div class="form-item no-margin">
+          <h3 class="mt-1">Identity Verification</h3>
+          <p class="settings-link"><a href="#">Why does Jemsplash need this information?</a></p>
+
+        </div>
+
+
+          <div class="form-item">
+            
+            <div class="form-bday-box">
+              <p>Date of Birth</p>
+              <div class="form-flex">
+                <select class="filter-select embed-select" name="Day" id="#">
+                  <option value="#">Day</option>
+                  <option value="#">1</option>
+                  <option value="#">2</option>
+                </select>
+
+                <select class="filter-select embed-select" name="Month" id="#">
+                  <option value="#">Month</option>
+                  <option value="#">1</option>
+                  <option value="#">2</option>
+                </select>
+
+                <select class="filter-select embed-select" name="Year" id="#">
+                  <option value="#">Year</option>
+                  <option value="#">1990</option>
+                  <option value="#">1991</option>
+                </select>
+
+              </div>
+            </div>
+
+            </div>
+
+          </div>  <!-- FORM SECTION ENDS / BORDER -->
+
+       
+          
+            <div class="form-item my-2 form-item-half paypal">
+
+              <label for="email">Payout PayPal Address</label>
+              <input type="text" name="email" id="" placeholder="Paypal Email">
+              <p class="mt-1">We encrypt all sensitive info using public key encryption (2048-bit RSA)</p>
+
+              <p>Be Completing this form you agree with this information provided is accurate. 
+                You also agree to our terms. </p>
+            
+    
+            </div>
+
+          
 
         
-        </div>     <!-- FORM SECTION ENDS / BORDER -->
 
-
-        <div class="setting-form-divider no-padding">
-
-        <div class="form-item form-item-half">
-          <label for="support">Support</label>
-          <input type="text" name="support" id="#" placeholder="your email here">
-          <p class="mt-1">This email is listed on the receipt of every sale.</p>
-        </div>
-
-      </div>   <!-- FORM SECTION ENDS / BORDER -->
-
-
-      <div class="form-flex">
-
-        <div class="form-item">
-          <label for="language">Language</label>
-          <select class="filter-select embed-select" name="language" id="#">
-            <option value="#">English </option>
-            <option value="#">French</option>
-          </select>
-        </div>
-
-        <div class="form-item">
-          <label for="time">Time Zone</label>
-          <select class="filter-select embed-select" name="time" id="#">
-            <option value="#">- 8:00 | Pacific Time (US & Canada) </option>
-            <option value="#">- 8:00 | Pacific Time (US & Canada)</option>
-          </select>
-        </div>
-
-      </div>
-
-
-      <div class="setting-form-divider">
-
-      <div class="form-item form-item-half">
-        <label for="sell">Sell in..</label>
-        <select class="filter-select embed-select" name="sell" id="#">
-          <option value="#">$ (US Dollar) </option>
-          <option value="#">$ (US Dollar)</option>
-        </select>
-      </div>
-      <p class="mt-1">Applies only to new products.</p>
-      <p class="mt-1">Charges will happen in USD, using an up-to-date exchange rate. Customers may incur an additional foreign transaction fee
-        according to their cardmember agreement.</p>
-
-      </div> <!-- FORM SECTION ENDS / BORDER -->
-
-
-      <div class="setting-form-divider no-padding">
-
-      <div class="form-item form-item-half">
-        <label for="tax">Apply sales tax in..</label>
-        <input type="text" name="tax" id="#" placeholder="State in which you have nexux...">
-      <p class="mt-1"><span class="settings-link"> Learn more<a href="#"></a></span> about nexus, permits, and taxable goods</p>
-      </div>
-
-     </div> <!-- FORM SECTION ENDS / BORDER -->
-
-
-     <div class="form-item">
-      <label for="x">Jemsplash Discover</label>
-      <p class="mt-1"> Grow beyond your core audience through recommendations of related products. When enabled, your top-selling and best-reviewed
-        products will be recommended to likely buyers.<span class="settings-link"> Learn more<a href="#"></a></span></p>
-
-    </div>
-
-    <div class="form-flex">
-
-      <div class="form-item form-switch">
-        <label for="product">Discover</label>
-        <input type="text" name="product" id="#" placeholder="Show my products in discover" disabled>
-
-        <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider round"></span>
-        </label>
-      </div>
-
-      <div class="form-item">
-        <label for="category">Category</label>
-         <select class="filter-select embed-select" name="category" id="#">
-          <option value="#">Sports</option>
-          <option value="#">Fashion</option>
-        </select>
-      </div>
-
-    </div>
-
-    <p class="mt-1">Sales made via a Jemsplash Discover purchase are subject to an additional 10% fee. Products sold directly to your audience or 
-      otherwise outside of the Jemsplash Discover feature will not be affected.</p>
-
-      <button class="btn btn-dark">Update Account Details</button>
+      <button class="btn btn-red px-2">Finish</button>
 
 
 
