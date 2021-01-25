@@ -45,7 +45,7 @@ https://discover-page.netlify.app/pricing
 7. Specific (upsell) Page
 https://discover-page.netlify.app/specific
 
-8. Course Page
+8. Course Page (Feature page)
 https://discover-page.netlify.app/course
 
 9. Course Preview Page
@@ -125,7 +125,7 @@ https://discover-page.netlify.app/myprofile-changes.html
 31. Share
 https://discover-page.netlify.app/published-share
 
-32. Published
+32. Published (LINKED)
 https://discover-page.netlify.app/published-published.html
 
 33. Published - New Post
