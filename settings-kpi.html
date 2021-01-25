@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jemsplash -- Settings - Advanced</title>
-  <link rel="stylesheet" href="assets/css/settings-advanced.css" />
+  <title>Jemsplash -- Settings - KPI</title>
+  <link rel="stylesheet" href="assets/css/settings-kpi.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,700&display=swap"
@@ -80,8 +80,8 @@
           <li>Settings</li>
           <li>Payout</li>
           <li>Password</li>
-          <li class="active">Advanced</li>
-          <li>KPI</li>
+          <li>Advanced</li>
+          <li class="active">KPI</li>
           <li class="active">Upgrade</li>
           
           
@@ -103,8 +103,8 @@
           <li>Settings</li>
           <li>Payout</li>
           <li>Password</li>
-          <li class="active-setting">Advanced</li>
-          <li>KPI</li>
+          <li>Advanced</li>
+          <li class="active-setting">KPI</li>
           <li><button class="btn btn-red">Upgrade</button></li>
         </ul>
 
@@ -114,154 +114,72 @@
 
       <div class="setting-main-box">
         <div class="setting-main-content">
-          <form action="#" class="payout-form">
 
+          <div class="kpi-box-parent">
 
-            
+          <div class="kpi-box">
+          <h3>Set Your Target</h3>
+         
 
-             
+          <div class="form-item">
+            <select class="filter-select embed-select" name="prod" id="#">
+              <option value="calendar-alt">&#xf073; January</option>
+              <option value="calendar-alt">&#xf073; February</option>
+            </select>
 
-            <div class="payout-form-divider no-padding">
-
-           <div class="form-item form-item-half">
-             <label for="domain">Custom Domain</label>
-             <input type="text" name="domain" id="#" placeholder="your domain name (example.com)">
-             <p class="mt-1">Upgrade to add a custom domain to your profile.<span class="settings-link"><a href="#">Learn more</a></span></p>
-
-            </div>
-
-          </div>   <!-- FORM SECTION ENDS / BORDER -->
-
-          <div class="payout-form-divider no-padding">
-
-            <div class="form-item form-item-half">
-              <label for="ping">Ping</label>
-              <input type="text" name="ping" id="#" placeholder="Ping endpoint">
-              <p class="mt-1">For external service, your seller id is e5IXgD9HQ_yhmmEG==<span class="settings-link"><a href="#">Learn more</a></span></p>
- 
-             </div>
- 
-           </div>   <!-- FORM SECTION ENDS / BORDER -->
-
-        
-
-            <div class="form-item">
-              <h3>Thirtd-Party Analytics</h3>
-            </div>
-
-              <div class="form-item form-middle">
-                <label for="gap">Google analytics</label>
-              <input type="text" name="gap" id="#" placeholder="Your google analytics property ID (UA -123456789-12)">
-              <input class="mt-1" type="text" name="gap2" id="#" placeholder="Your google analytics primary domain (example.com)">
-            
-            </div>
-
-            <div class="form-item form-middle">
-              <label for="fbp">Facebook Pixel</label>
-            <input type="text" name="fbp" id="#" placeholder="Your facebook pixel  ID (UA -123456789-12)">
-          
           </div>
 
           <div class="form-item">
-            <div class="form-checkbox purchase-event">
-              <input type="checkbox" name="" id="">
-              <p>Send “Purchase ” events for free ($0) sales.</p>
-             </div>
-             <p class="my-1">Include other services' code snippets</p>
+            <div class="form-target-btn">
+            <input type="text" name="" id="#" placeholder="$1000">
+            <button class="btn btn-red">Target</button>
+
           </div>
 
-          <div class="form-item form-middle">
-            <div class="form-flex choose-products">
+          </div>
 
-              <select class="filter-select embed-select" name="prod" id="#">
-                <option value="#">Chosee products the code will be included for</option>
-              </select>
+          <div class="form-item">
+            <div class="form-target-info">
+            <h1>Target</h1>
+            <h2>$1000</h2>
+          </div>
+          </div>
 
-              <button class="btn btn-red">Remove</button>
+          <div class="form-item">
+            <div class="form-target-info">
+            <h1>Monthly Income</h1>
+            <div class="form-flex">
+            <h2>$756</h2>
+            <div class="target-arrow">
+              <div class="target-arrow-flex">
+              <i class="fas fa-long-arrow-alt-down fa-2x"></i> 
+              <p>25% Low</p>
+            </div>
             </div>
           </div>
-
-         
-          <div class="form-item form-middle form-textarea">
-            <textarea name="code" id="" cols="30" rows="8"></textarea>
-            <button class="btn btn-snipp mt-1">Add Snippet</button>
           </div>
-           
-
-
-    
-        
-
-      <button class="btn btn-red">Update Account Details</button>
+          </div>
 
 
 
+        </div>
 
-          </form>
+
+        <div class="kpi-chart-box">
+      
+          <img src="assets/chart-kpi.png" alt="">
+       
+        </div>
+
+      </div>
+
 
         </div>
 
       </div>   
-
-
-
-
-
-
-
-
-
-
-      
+   
 
     </div>  <!--  PARENT BOXES END  -->
-
-        
-    <div class="setting-main-box modified">
-      <div class="setting-main-content">
-        <form action="#" class="payout-form">
-
-
-          
-
-           
-
-          <div class="payout-form-divider no-padding">
-
-         <div class="form-item form-item-half">
-            <h3>Create Application</h3>
-            <p class="mt-1">Application icon</p>
-
-            <div class="form-flex flex-icon">
-              <div class="form-icon-box">
-                <i class="far fa-plus-square fa-3x"></i>
-              </div>
-              <button class="btn btn-snipp mt-1">Add new icon</button>
-
-            </div>
-
-          </div>
-
-          <div class="form-item form-middle">
-            <label for="appname">Application name</label>
-          <input type="text" name="appname" id="#" placeholder="Name">
-        </div>
-
-        <div class="form-item form-middle mb-2">
-          <label for="appuri">Redirect URI</label>
-        <input type="text" name="appuri" id="#" placeholder="http://yourapp.com/callback">
-      </div>
-
-      <button class="btn btn-red">Create Application</button>
-
-
-
-  
-
-        </form>
-      </div>
-    </div>   
-
 
 
 
