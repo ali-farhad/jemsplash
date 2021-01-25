@@ -1066,6 +1066,19 @@ select {
   .kpi-box {
     margin-right: 2rem;
   }
+
+  .form-flex.form-income > *:nth-child(1) {
+    flex-basis: 10%;
+  }
+
+  .form-flex.form-income > *:nth-child(2) {
+    flex-basis: 20%;
+  }
+
+  .target-arrow-flex p {
+    padding: 0;
+    padding-left: 0.3rem;
+  }
 }
 
 /* big landscape tablets, laptops, and desktops */
