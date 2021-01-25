@@ -46,6 +46,10 @@ a:hover {
   transition: border 0.5s;
 }
 
+button > a:hover {
+  border: 2px solid transparent;
+}
+
 form,
 input,
 button,

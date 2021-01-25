@@ -63,6 +63,10 @@ button:active {
   box-shadow: none !important;
 }
 
+button > a:hover {
+  border: 2px solid transparent;
+}
+
 /* 
   button:active {
     transform: translateY(4px) !important;
@@ -289,7 +293,6 @@ section {
   margin: 3rem auto 6rem auto;
 }
 
-
 /* OLD PAGE CSS */
 
 @media (min-width: 950px) {
@@ -353,8 +356,6 @@ section {
 hr {
   color: inherit;
 }
-
-
 
 /*---------- MEDIA QUERIES----------*/
 
