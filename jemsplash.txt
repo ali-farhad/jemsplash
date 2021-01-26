@@ -1,25 +1,22 @@
-Jemsplash v0.1  (Frontend)
+Jemsplash v1.0  (Frontend)
 
 =======================================
 CHANGE LOG:
 =======================================
 
 
-->   Added 17 pages (frontend only)
+->   Added all 42 pages (frontend only)
 
-->   Pages are partitally linked, and will be completely linked once all pages are finished
+->   Pages are all linked, where possible. (Some buttons such as forms etc will only work after backend support)
 
-->   all pages are hosted on my private server so their link for your in-browser demo will be included in this update.
+->   all pages are hosted on my private server so their link for your in-browser demo are availabe. (Updated in your Google Sheet)
 
 
 ->   all pages are mobile ready (i.e. they can run on all devices big or small)
 
 ===================================================================================
 
-code overview (so far)
-
-
-let's demo each page. 
+LINKS DEMO
 
 =====================================================================================
 
@@ -128,6 +125,7 @@ https://discover-page.netlify.app/published-share
 32. Published (LINKED)
 https://discover-page.netlify.app/published-published.html
 
+
 33. Published - New Post
 https://discover-page.netlify.app/published-new-post.html
 
@@ -164,8 +162,5 @@ https://discover-page.netlify.app/settings-advanced
 https://discover-page.netlify.app/settings-kpi
 
 
-admin@aioupastpapers.com
 
-
-sb-nwl4q3562998@personal.example.com
-,x&f-S$5
+ALL 42 pages finished!
