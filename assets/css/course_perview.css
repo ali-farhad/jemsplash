@@ -174,6 +174,12 @@ section {
   margin-right: 0.5rem;
 }
 
+
+.user-setup a:hover {
+  border: 2px solid transparent;
+
+}
+
 @media (min-width: 860px) {
   .course-graphics img {
     max-width: 80%;
@@ -373,7 +379,7 @@ hr {
 
 @media (max-width: 770px) {
   .home-nav {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   /* .home-nav > * {
@@ -473,7 +479,7 @@ hr {
   .openMenu {
     display: block;
     position: absolute;
-    left: 20px;
+    right: 20px;
     font-size: 2rem;
     color: red;
   }

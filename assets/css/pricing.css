@@ -200,6 +200,12 @@ section {
   margin-right: 0.5rem;
 }
 
+.user-setup a:hover {
+  border: 2px solid transparent;
+
+}
+
+
 @media (min-width: 860px) {
 }
 

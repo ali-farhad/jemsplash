@@ -156,6 +156,13 @@ h3 {
   margin-right: 0.5rem;
 }
 
+.user-setup a:hover {
+  border: 2px solid transparent;
+
+}
+
+
+
 .links-a li:first-child,
 .links-b li:first-child,
 .links-c li:first-child,

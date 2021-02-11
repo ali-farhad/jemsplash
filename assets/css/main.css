@@ -170,6 +170,12 @@ section {
   margin-right: 0.5rem;
 }
 
+.user-setup a:hover {
+  border: 2px solid transparent;
+
+}
+
+
 .hero {
   background-image: url(/assets/bgf.png);
   background-size: cover;
@@ -352,6 +358,9 @@ blockquote {
 
 .testi_person img {
   width: min(20%, 100px);
+  width: 100px;
+  
+
   border: 1px solid transparent;
   border-radius: 25px;
   margin-right: 0.5rem;
@@ -548,6 +557,13 @@ hr {
   .testi_nav {
     width: 50%;
   }
+
+
+  .testi_person img {
+    width: 60px;
+  }
+
+
 }
 
 /* Original */
@@ -644,6 +660,11 @@ hr {
   .home_cta {
     margin: 0 0 !important;
   }
+
+  .testi_person img {
+    width: 60px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) and (min-width: 200px) {
@@ -808,5 +829,9 @@ hr {
 
   .home_mailbox button {
     margin-left: -6rem !important;
+  }
+
+  .testi_person img {
+    width: 60px;
   }
 }

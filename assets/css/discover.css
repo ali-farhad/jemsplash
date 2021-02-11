@@ -207,6 +207,32 @@ section {
   margin-right: 0.5rem;
 }
 
+.user-setup a:hover {
+  border: 2px solid transparent;
+
+}
+
+.caro_item li a:hover {
+
+  background-color: var(--clr-dark-btn);
+  color: var(--clr-primary);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .1s;
+
+
+  
+}
+
+.service-card-parent > * {
+  border-bottom: 1px solid red;
+  margin: 2px 0;
+}
+
+
+
+
+
 @media (min-width: 950px) {
 }
 

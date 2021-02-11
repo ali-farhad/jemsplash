@@ -746,6 +746,12 @@ hr {
   color: inherit;
 }
 
+.footer-logo a:hover {
+  border: 2px solid transparent;
+}
+
+
+
 /*---------- MEDIA QUERIES----------*/
 
 /* Original */
