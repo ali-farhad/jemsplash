@@ -209,29 +209,19 @@ section {
 
 .user-setup a:hover {
   border: 2px solid transparent;
-
 }
 
 .caro_item li a:hover {
-
   background-color: var(--clr-dark-btn);
   color: var(--clr-primary);
   cursor: pointer;
   border: 2px solid transparent;
-  transition: all .1s;
-
-
-  
+  transition: all 0.1s;
 }
 
 .service-card-parent > * {
-  border-bottom: 1px solid red;
-  margin: 2px 0;
+  margin-bottom: 1rem;
 }
-
-
-
-
 
 @media (min-width: 950px) {
 }
@@ -318,8 +308,9 @@ section {
 
 .service-card {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 0.2rem;
   padding: 0.5rem;
+  align-items: center;
 }
 
 .service-card-info {
@@ -417,6 +408,12 @@ section {
 
 hr {
   color: inherit;
+}
+
+#mob-slider,
+#mob-slider-books,
+#mob-slider-photo {
+  display: none;
 }
 
 /*---------- MEDIA QUERIES----------*/
@@ -577,5 +574,34 @@ hr {
 
   .service-card-parent {
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 470px) and (min-width: 220px) {
+  .service-card-parent,
+  .best-selling-nav {
+    display: none;
+  }
+
+  #mob-slider,
+  #mob-slider-books,
+  #mob-slider-photo {
+    display: block;
+  }
+
+  #mob-slider .splide__pagination,
+  #mob-slider-books .splide__pagination,
+  #mob-slider-photo .splide__pagination {
+    display: none;
+  }
+
+  #mob-slider .splide__arrow,
+  #mob-slider-books .splide__arrow,
+  #mob-slider-photo .splide__arrow {
+    top: 14rem;
+  }
+
+  .service-card {
+    margin-top: 0rem;
   }
 }

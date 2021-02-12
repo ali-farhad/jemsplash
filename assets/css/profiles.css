@@ -721,18 +721,18 @@ form label {
   width: 100%;
 }
 
-.form-item:nth-child(3n) {
+.form-item:nth-child(3n) input {
   position: relative;
 }
 
-.form-item .color-picker div:nth-child(2) {
+.form-item .color-picker input {
   border: 1px solid transparent;
   width: 25px;
   height: 25px;
 
-  background-color: var(--clr-secondary);
+  /* background-color: var(--clr-secondary); */
   position: absolute;
-  right: 36px;
+  right: 32px;
   bottom: 337px;
 }
 
@@ -833,7 +833,7 @@ form label {
   flex-direction: column;
 }
 
-.profile-picture-box > * {
+.profile-picture-box > *:nth-child(1) {
   margin-bottom: 1rem;
   cursor: pointer;
 }

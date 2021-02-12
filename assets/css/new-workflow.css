@@ -750,7 +750,9 @@ hr {
   border: 2px solid transparent;
 }
 
-
+.workflow-nav.mobile-only {
+  display: none !important;
+}
 
 /*---------- MEDIA QUERIES----------*/
 
@@ -1023,5 +1025,15 @@ hr {
   .workflow-dropdown-download h4,
   .workflow-dropdown-download p {
     text-align: center;
+  }
+
+  .workflow-nav.mobile-only {
+    display: block !important;
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+  }
+
+  .workflow-nav-special.placement-change {
+    display: none !important;
   }
 }

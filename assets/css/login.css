@@ -158,10 +158,7 @@ h3 {
 
 .user-setup a:hover {
   border: 2px solid transparent;
-
 }
-
-
 
 .links-a li:first-child,
 .links-b li:first-child,
@@ -251,6 +248,10 @@ main {
 .login-form {
   display: flex;
   flex-direction: column;
+}
+
+.active {
+  color: var(--clr-secondary);
 }
 
 .login-form input[type="email"],

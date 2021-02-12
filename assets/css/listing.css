@@ -209,10 +209,7 @@ section {
 
 .user-setup a:hover {
   border: 2px solid transparent;
-
 }
-
-
 
 @media (min-width: 950px) {
 }
@@ -523,6 +520,10 @@ hr {
   color: inherit;
 }
 
+.listing-mobile-only {
+  display: none;
+}
+
 /*---------- MEDIA QUERIES----------*/
 
 /* Original */
@@ -679,6 +680,11 @@ hr {
   .service-card-parent {
     align-items: center;
   }
+
+  .listing_box,
+  .listing_tags {
+    display: block;
+  }
 }
 
 /* Extremely small devices  */
@@ -760,4 +766,32 @@ hr {
   .service-card-parent {
     align-items: center;
   }
+
+  .listing_box,
+  .listing_tags {
+    display: none;
+  }
+
+  .listing-mobile-only {
+    display: block;
+  }
+}
+
+.listing-mobile-only {
+  margin: 1rem 0;
+}
+
+.listing-mobile-only h2 {
+  margin: 1rem 0;
+}
+
+.listing-mobile-only select {
+  margin-top: 2rem;
+  margin: 0.2rem;
+  width: 100%;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  margin: 0.1rem auto;
 }

@@ -50,6 +50,10 @@ button > a:hover {
   border: 2px solid transparent;
 }
 
+.active {
+  color: var(--clr-secondary);
+}
+
 form,
 input,
 button,
@@ -176,9 +180,7 @@ section {
 
 .user-setup a:hover {
   border: 2px solid transparent;
-
 }
-
 
 .hero {
   background-image: url(/assets/course_bg.png);
