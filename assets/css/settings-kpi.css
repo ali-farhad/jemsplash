@@ -365,6 +365,21 @@ hr {
   color: inherit;
 }
 
+.links-a li:first-child,
+.links-b li:first-child,
+.links-c li:first-child,
+.links-d li:first-child,
+.links-e li:first-child {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+footer {
+  font-size: .9rem;
+}
+
+
 .workflow-nav {
   display: none;
 }
@@ -408,7 +423,7 @@ hr {
   height: 12px;
   border-top: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
-  top: 106px;
+  top: 112px;
   left: 95%;
   margin-left: 3px;
   content: "";

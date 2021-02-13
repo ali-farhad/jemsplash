@@ -570,6 +570,56 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.buy-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.embed-btn-box {
+  text-align: center;
+}
+
+.footer-mini {
+  margin: 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #8080805c;
+  padding: 0.3rem 0;
+}
+
+.mini-a {
+  display: flex;
+  align-items: center;
+}
+
+.mini-a p {
+  margin-right: 2rem;
+}
+
+.mini-b ul {
+  display: flex;
+}
+.mini-b ul li {
+  margin-right: 1rem;
+}
+
+hr {
+  color: inherit;
+}
+
+.links-a li:first-child,
+.links-b li:first-child,
+.links-c li:first-child,
+.links-d li:first-child,
+.links-e li:first-child {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+
+
 /*---------- MEDIA QUERIES----------*/
 
 @media only screen and (max-width: 600px) and (min-width: 200px) {
